@@ -82,7 +82,7 @@ class Home extends Component
         $this->section_four_description = $settings['home_section_one_description_four'];
         $this->section_four_icon = $settings['home_section_one_icon_four'];
 
-        $this->images = $settings['header_images'];
+        $this->images = json_decode($settings['header_images']);
 
         $this->about_secondary_title = $settings['about_secondary_title'];
         $this->about_description = $settings['about_description'];
