@@ -35,7 +35,7 @@ class AboutUs extends Component
         $this->about_secondary_title = $settings['about_secondary_title'];
         $this->about_description = $settings['about_description'];
         $this->about_video = $settings['about_video'];
-        $this->about_work_shop_images = $settings['about_work_shop_images'];
+        $this->about_work_shop_images = json_decode($settings['about_work_shop_images']);
         $this->about_work_shop_title = $settings['about_work_shop_title'];
     }
 
