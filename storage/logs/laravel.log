@@ -697,3 +697,35 @@
 #67 C:\\Program Files\\Herd\\resources\\app.asar.unpacked\\resources\\valet\\server.php(139): require('C:\\\\Users\\\\HP\\\\Des...')
 #68 {main}
 "} 
+[2025-04-27 17:52:10] local.ERROR: Maximum execution time of 30 seconds exceeded {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at C:\\Users\\HP\\Desktop\\Hadi Private\\Private Project\\wge-france\\storage\\framework\\views\\a086aa3ae4addfb4efe0a17cb2c9d46c.php:2)
+[stacktrace]
+#0 {main}
+"} 
+[2025-04-27 18:00:53] local.ERROR: Maximum execution time of 30 seconds exceeded {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at C:\\Users\\HP\\Desktop\\Hadi Private\\Private Project\\wge-france\\vendor\\symfony\\finder\\Iterator\\RecursiveDirectoryIterator.php:77)
+[stacktrace]
+#0 {main}
+"} 
+[2025-04-27 18:01:38] local.ERROR: Maximum execution time of 30 seconds exceeded {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at C:\\Users\\HP\\Desktop\\Hadi Private\\Private Project\\wge-france\\storage\\framework\\views\\babea3ebbbd0042d6f48a54ae647ce8c.php:1)
+[stacktrace]
+#0 {main}
+"} 
+[2025-04-27 18:12:43] local.ERROR: Maximum execution time of 30 seconds exceeded {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at C:\\Users\\HP\\Desktop\\Hadi Private\\Private Project\\wge-france\\storage\\framework\\views\\f2f98908b3eea40ee2d2fa1bc688d7e0.php:6)
+[stacktrace]
+#0 {main}
+"} 
+[2025-04-27 18:14:25] local.ERROR: Maximum execution time of 30 seconds exceeded {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at C:\\Users\\HP\\Desktop\\Hadi Private\\Private Project\\wge-france\\storage\\framework\\views\\afdaf88b0fe4c03a31bae92b7813f9f3.php:4)
+[stacktrace]
+#0 {main}
+"} 
+[2025-04-27 18:26:01] local.ERROR: Maximum execution time of 30 seconds exceeded {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at C:\\Users\\HP\\Desktop\\Hadi Private\\Private Project\\wge-france\\storage\\framework\\views\\7e00215389ee2b0e48e596507503a021.php:1)
+[stacktrace]
+#0 {main}
+"} 
+[2025-04-27 18:31:26] local.ERROR: Maximum execution time of 30 seconds exceeded {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at C:\\Users\\HP\\Desktop\\Hadi Private\\Private Project\\wge-france\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:204)
+[stacktrace]
+#0 {main}
+"} 
+[2025-04-27 18:31:40] local.ERROR: Maximum execution time of 30 seconds exceeded {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at C:\\Users\\HP\\Desktop\\Hadi Private\\Private Project\\wge-france\\vendor\\symfony\\http-foundation\\Response.php:397)
+[stacktrace]
+#0 {main}
+"} 
