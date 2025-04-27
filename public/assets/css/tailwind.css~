@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    line-height: inherit;
+}
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-item {
+    text-align: center !important;
+    font-size: 18px;
+    background: #ffffff !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.swiper-button-prev {
+    color: #ff7f38 !important;
+    outline: none;
+}
+
+.swiper-button-next {
+    color: #ff7f38 !important;
+    outline: none;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff7f38 !important;
+}
+
+
+@media (max-width: 768px) {
+    .swiper-button-prev,
+    .swiper-button-next,
+    .swiper-pagination {
+        display: none !important;
+    }
+}
+
+
+
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(10px);
+}
+
+.fullscreen-image {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.fullscreen-cancel,
+.fullscreen-download,
+.fullscreen-left,
+.fullscreen-right {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    cursor: pointer;
+    width: 50px; /* Ensure width and height are equal */
+    height: 50px; /* Ensure width and height are equal */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the icon */
+    border-radius: 50%; /* Make it a perfect circle */
+    z-index: 10000;
+}
+
+
+.fullscreen-cancel {
+    top: 20px;
+    right: 40px;
+}
+
+.fullscreen-download {
+    top: 20px;
+    right: 100px;
+}
+
+.fullscreen-left {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fullscreen-right {
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*Style For Checkbox*/
+
+input[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+    font-family: 'Arial';
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding-left: 2px;
+    margin-right: 1px;
+    vertical-align: bottom;
+    color: transparent;
+    transition: 0.2s;
+}
+
+input[type=checkbox]:checked + label:before {
+    background-color: #ED820A;
+    border-color: #ED820A;
+    color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+    border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+    background-color: #F7C28F;
+    border-color: #F7C28F;
+}
+
+/* Navbar Toggler */
+.navbarTogglerActive > span:nth-child(1){
+    top: 7px;
+    --tw-rotate: 45deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.navbarTogglerActive > span:nth-child(2){
+    opacity: 0;
+}
+
+.navbarTogglerActive > span:nth-child(3){
+    top: -8px;
+    --tw-rotate: 135deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.fixed-logo img {
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+
+@media (min-width: 540px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+
+@media (min-width: 720px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 960px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1140px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1320px){
+    .container{
+        max-width: 1320px;
+    }
+}
+

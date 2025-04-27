@@ -1,0 +1,54 @@
+<div>
+    <section id="faq">
+        <div class="relative w-full h-[400px]">
+            <img src="{{ asset('i8.jpg') }}" class="w-full h-full object-cover" alt="points">
+
+            <div class="absolute inset-0 flex items-center justify-center text-center bg-black/50">
+                <div class="text-white">
+                    <h2 class="mb-3 text-3xl font-bold leading-[1.2] sm:text-4xl md:text-[40px]">
+                        Title
+                    </h2>
+            <span class="mb-2 block text-2xl font-size-header font-semibold">
+                Title One
+            </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-4 p-4 flex justify-center bg-gray-200">
+            <div class="w-4/5">
+                <div class="flex items-center mx-4">
+                    <i class="fa-solid fa-house text-primary"></i>
+                    <p class="ml-2 text-gray-500">Home</p>
+                    <i class="fa-solid fa-arrow-right text-primary ml-2"></i>
+                    <p class="ml-2">FAQ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center m-8">
+            <div class="w-4/5 border rounded-2xl mt-4">
+                <div class="flex items-center mx-4">
+                    <div
+                        class="flex items-center justify-center h-8 w-8 rounded-full bg-primary text-white text-lg font-bold">
+                        Q
+                    </div>
+                    <div class="pt-6 pl-6 pb-6 text-base w-full">What is your after-sales service?</div>
+                </div>
+
+                <div class="border-t border-gray-200 mx-4 mb-6 text-sm flex items-center">
+                    <div
+                        class="flex items-center justify-center h-8 w-8 rounded-full bg-gray-400 text-white text-lg font-bold">
+                        A
+                    </div>
+                    <div class="pt-6 pl-6 pb-6 text-base w-full">
+                        We provide a one-year warranty period for our products, as well as replacement services for
+                        various accessories. We will take various ways to guide customers to install and use the
+                        machine. Engineers can also be sent to the buyer's company to install and debug the machine at
+                        the request of the customer. Buyers are required to pay the corresponding fees.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
