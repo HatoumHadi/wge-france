@@ -95,8 +95,8 @@ class LandingSettings extends Page
             Tabs::make()
                 ->schema([
                     Tab::make('Header')
+                        ->lazy()
                         ->schema([
-
                             FileUpload::make('logo')
                                 ->image()
                                 ->columnSpanFull()
@@ -164,6 +164,7 @@ class LandingSettings extends Page
                         ])->label(__('trans.home')),
 
                     Tab::make('About')
+                        ->lazy()
                         ->schema([
                             TextInput::make('about_primary_title')
                                 ->required()
@@ -186,6 +187,8 @@ class LandingSettings extends Page
 
                             FileUpload::make('about_video')
                                 ->required()
+                                ->maxSize(102400)
+                                ->directory('about-us')
                                 ->preserveFilenames()
                                 ->label(__('trans.video')),
 
@@ -203,6 +206,7 @@ class LandingSettings extends Page
                         ])->label(__('trans.about_us')),
 
                     Tab::make('Our Vision')
+                        ->lazy()
                         ->schema([
                             TextInput::make('our_vision_section_title')->required()->label(__('trans.title'))->required(),
                             TextInput::make('our_vision_section_second_title')->required()->label(__('trans.section_second_title'))->required(),
@@ -214,6 +218,7 @@ class LandingSettings extends Page
                         ])->label(__('trans.our_vision')),
 
                     Tab::make('Our Mission')
+                        ->lazy()
                         ->schema([
                             TextInput::make('our_mission_section_title')->label(__('trans.title'))->required(),
                             TextInput::make('our_mission_section_secondary_title')->label(__('trans.our_mission_section_secondary_title'))->required(),
@@ -225,6 +230,7 @@ class LandingSettings extends Page
 
 
                     Tab::make('Faqs')
+                        ->lazy()
                         ->schema([
                             TextInput::make('faq_section_title')->label(__('trans.faq_section_title'))->required(),
                             TextInput::make('faq_section_secondary_title')->label(__('trans.faq_section_secondary_title'))->required(),
@@ -233,6 +239,7 @@ class LandingSettings extends Page
 
 
                     Tab::make('Contact Us')
+                        ->lazy()
                         ->schema([
                             TextInput::make('contact_section_title')->label(__('trans.contact_section_title'))->required(),
                             TextInput::make('contact_section_secondary_title')->label(__('trans.contact_section_secondary_title'))->required(),
@@ -282,12 +289,13 @@ class LandingSettings extends Page
                         ])->label(__('trans.contact_us')),
 
                     Tab::make('Products')
-                    ->schema([
-                        FileUpload::make('product_header_image')
-                            ->required()
-                            ->label(__('trans.product_header_image')),
-                    ])
-                    ->label(__('trans.products')),
+                        ->lazy()
+                        ->schema([
+                            FileUpload::make('product_header_image')
+                                ->required()
+                                ->label(__('trans.product_header_image')),
+                        ])
+                        ->label(__('trans.products')),
                 ])
         ])->statePath('data');
     }

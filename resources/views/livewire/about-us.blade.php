@@ -40,9 +40,12 @@
                     <div class="w-full sm:px-4 lg:w-1/2">
                         <div class="-mx-2 flex flex-wrap sm:-mx-4 lg:-mx-2 xl:-mx-4">
                             <div class="w-full px-2 sm:px-4 lg:px-2 xl:px-4">
-                                <video muted playsinline autoplay loop controls class="h-full w-full rounded-lg">
-                                    <source src="{{ asset($about_video) }}" type="video/mp4">
-                                </video>
+                                <div class="relative h-[50vh] w-full rounded-lg overflow-hidden">
+                                    <video id="aboutVideo" muted playsinline autoplay loop
+                                           class="h-full w-full object-cover rounded-lg">
+                                        <source src="{{ asset($about_video) }}" type="video/mp4">
+                                    </video>
+                                </div>
                             </div>
                         </div>
                     </div>
