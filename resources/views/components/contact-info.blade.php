@@ -8,7 +8,7 @@
         x-transition:leave="transition ease-in duration-300 transform"
         x-transition:leave-start="translate-x-0 opacity-100"
         x-transition:leave-end="translate-x-full opacity-0"
-        class="bg-primary py-2 px-4 absolute top-0 right-0 w-12 rounded-bl-xl rounded-tl-xl">
+        class="bg-primary py-2 px-4 absolute top-0 right-0 w-12 rounded-bl-xl rounded-tl-xl shadow-lg shadow-gray-600">
         <ul class="flex flex-col justify-center items-center">
             <li class="mt-2 cursor-pointer opacity-100 hover:opacity-75 transition-opacity duration-300"
                 @click="window.scrollTo({ top: 0, behavior: 'smooth' })">
@@ -65,7 +65,7 @@
     </div>
     <div
         @click="isVisible = !isVisible"
-        class="absolute right-0 top-[70%] translate-y-[-50%] bg-primary py-4 px-4 text-center cursor-pointer w-12 opacity-100 hover:opacity-75 transition-opacity duration-300 rounded-bl-xl rounded-tl-xl">
+        class="absolute right-0 top-[70%] translate-y-[-50%] bg-primary py-4 px-4 text-center cursor-pointer w-12 opacity-100 hover:opacity-75 transition-opacity duration-300 rounded-bl-xl rounded-tl-xl shadow-lg shadow-gray-600">
         <template x-if="isVisible">
             <i class="fa-solid fa-angle-right text-white text-lg"></i>
         </template>

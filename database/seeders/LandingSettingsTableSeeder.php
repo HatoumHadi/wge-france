@@ -14,12 +14,12 @@ class LandingSettingsTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('landing_settings')->delete();
-
+        
         \DB::table('landing_settings')->insert(array (
-            0 =>
+            0 => 
             array (
                 'id' => 1,
                 'key' => 'header_primary_title',
@@ -27,7 +27,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2024-12-08 09:03:29',
             ),
-            1 =>
+            1 => 
             array (
                 'id' => 2,
                 'key' => 'home_section_one_title',
@@ -35,7 +35,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2024-12-08 09:03:29',
             ),
-            2 =>
+            2 => 
             array (
                 'id' => 3,
                 'key' => 'home_section_one_title_one',
@@ -43,7 +43,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            3 =>
+            3 => 
             array (
                 'id' => 4,
                 'key' => 'home_section_one_description_one',
@@ -51,7 +51,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            4 =>
+            4 => 
             array (
                 'id' => 5,
                 'key' => 'home_section_one_icon_one',
@@ -59,7 +59,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2024-12-08 09:03:29',
             ),
-            5 =>
+            5 => 
             array (
                 'id' => 6,
                 'key' => 'home_section_one_title_two',
@@ -67,7 +67,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            6 =>
+            6 => 
             array (
                 'id' => 7,
                 'key' => 'home_section_one_description_two',
@@ -75,7 +75,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            7 =>
+            7 => 
             array (
                 'id' => 8,
                 'key' => 'home_section_one_icon_two',
@@ -83,7 +83,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2024-12-08 09:03:29',
             ),
-            8 =>
+            8 => 
             array (
                 'id' => 9,
                 'key' => 'home_section_one_title_three',
@@ -91,7 +91,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            9 =>
+            9 => 
             array (
                 'id' => 10,
                 'key' => 'home_section_one_description_three',
@@ -99,7 +99,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            10 =>
+            10 => 
             array (
                 'id' => 11,
                 'key' => 'home_section_one_icon_three',
@@ -107,7 +107,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2024-12-08 09:03:29',
             ),
-            11 =>
+            11 => 
             array (
                 'id' => 12,
                 'key' => 'home_section_one_title_four',
@@ -115,7 +115,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            12 =>
+            12 => 
             array (
                 'id' => 13,
                 'key' => 'home_section_one_description_four',
@@ -123,7 +123,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            13 =>
+            13 => 
             array (
                 'id' => 14,
                 'key' => 'home_section_one_icon_four',
@@ -131,7 +131,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2024-12-08 09:03:29',
             ),
-            14 =>
+            14 => 
             array (
                 'id' => 15,
                 'key' => 'header_images',
@@ -139,7 +139,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-04-27 17:37:57',
             ),
-            15 =>
+            15 => 
             array (
                 'id' => 16,
                 'key' => 'about_primary_title',
@@ -147,23 +147,23 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            16 =>
+            16 => 
             array (
                 'id' => 17,
                 'key' => 'about_description',
-                'value' => '{"en":"<p>WGE France sources from companies undergoing restructuring, acquiring used printing and finishing equipment in working order, often still in production.</p><p><br>WGE France thus offers its customers and prospects functional machines in good condition.</p><p><br>WGE France also offers, through its partners, equipment refurbishment services, including relocation, installation, and commissioning, as well as maintenance services.</p>","ar":"<p dir=\\"rtl\\">تقوم شركة WGE France بالحصول على المعدات من الشركات التي تخضع لإعادة الهيكلة، وتقوم بشراء معدات الطباعة والتشطيب المستعملة التي لا تزال في حالة صالحة للعمل، وغالبًا ما تكون لا تزال في مرحلة الإنتاج.</p><p dir=\\"rtl\\"><br>وبهذا تقدم شركة WGE France لعملائها وعملائها المحتملين آلات وظيفية بحالة جيدة.</p><p dir=\\"rtl\\"><br>وتقدم شركة WGE France أيضًا، من خلال شركائها، خدمات تجديد المعدات، بما في ذلك نقلها وتثبيتها وتشغيلها، بالإضافة إلى خدمات الصيانة.</p>","fr":"<p><strong>WGE France s’approvisionne auprès des entreprises en cours de restructuration, elle acquiert ainsi des matériels d’imprimerie et de façonnage d’occasion en état de fonctionnement, souvent toujours en production.<br></strong><br></p><p><strong>WGE France offre ainsi à ses clients et prospects des machines fonctionnelles en bon état.<br></strong><br></p><p><strong>WGE France propose également, via ses partenaires, des services de remise en état des matériels leur déplacement, leur installation et mise en service, de même que des services de maintenance.<br></strong><br></p>"}',
+                'value' => '{"en":"<p>At <strong>WGE France</strong>, we specialize in the sale, purchase, and maintenance of high-quality printing machines. With years of industry experience, our mission is to provide reliable and cost-effective solutions for businesses seeking efficient printing technologies.<br><br>Whether you\'re looking to invest in a new machine, sell your existing equipment, or ensure optimal performance through expert maintenance, our dedicated team is here to support you every step of the way. We take pride in delivering personalized service, technical expertise, and trusted machinery that meets the evolving needs of the printing industry.<br><br>Partner with WGE France—your trusted source for professional printing equipment and support.</p>","ar":"<p dir=\\"rtl\\">في WGE فرنسا، نتخصص في بيع وشراء وصيانة آلات الطباعة عالية الجودة. بخبرة تمتد لسنوات في هذا المجال، نهدف إلى توفير حلول موثوقة واقتصادية للشركات التي تبحث عن تقنيات طباعة فعّالة.<br><br>سواء كنت ترغب في الاستثمار في آلة جديدة، أو بيع معداتك الحالية، أو ضمان الأداء الأمثل من خلال صيانة احترافية، فإن فريقنا المتفاني جاهز لدعمك في كل خطوة. نفخر بتقديم خدمة شخصية، وخبرة فنية، وآلات موثوقة تلبي الاحتياجات المتطورة لصناعة الطباعة.<br><br>تعاون مع WGE فرنسا - مصدرك الموثوق لمعدات الطباعة الاحترافية والدعم الفني.</p>","fr":"<p>Chez <strong>WGE France</strong>, nous sommes spécialisés dans la vente, l\'achat et la maintenance de machines d\'impression de haute qualité. Forts de nombreuses années d\'expérience dans le secteur, notre mission est de fournir des solutions fiables et économiques aux entreprises en quête de technologies d\'impression performantes.<br><br>Que vous souhaitiez investir dans une nouvelle machine, vendre votre équipement existant ou garantir des performances optimales grâce à une maintenance experte, notre équipe dédiée est là pour vous accompagner à chaque étape. Nous sommes fiers de vous offrir un service personnalisé, une expertise technique et des machines fiables qui répondent aux besoins changeants du secteur de l\'impression.<br><br>Faites équipe avec WGE France&nbsp;: votre fournisseur de confiance pour vos équipements d\'impression professionnels et votre assistance.</p>"}',
                 'created_at' => '2024-12-08 09:05:31',
-                'updated_at' => '2025-04-27 17:39:54',
+                'updated_at' => '2025-05-01 11:26:04',
             ),
-            17 =>
+            17 => 
             array (
                 'id' => 18,
                 'key' => 'about_video',
-                'value' => '{"fr":"about-us/vid-1.mp4"}',
+                'value' => '{"fr":"about-us/vid-1.mp4","ar":"video1.mp4","en":"video1.mp4"}',
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-04-28 20:02:03',
             ),
-            18 =>
+            18 => 
             array (
                 'id' => 19,
                 'key' => 'about_work_shop_images',
@@ -171,7 +171,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-04-27 17:37:57',
             ),
-            19 =>
+            19 => 
             array (
                 'id' => 20,
                 'key' => 'about_work_shop_title',
@@ -179,7 +179,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            20 =>
+            20 => 
             array (
                 'id' => 21,
                 'key' => 'our_vision_section_title',
@@ -187,39 +187,39 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2024-06-24 15:30:07',
             ),
-            21 =>
+            21 => 
             array (
                 'id' => 22,
                 'key' => 'our_vision_description',
-            'value' => '{"en": "Any machine used in printing ink on the substrate (printing medium) which can be cloth, paper or plastic, is referred to as the printing machinery. By applying pressure to the substrate, the printing machinery transfers the ink on the printing medium resting on an inked platform composed of movable type.","ar": "أي آلة تستخدم في طباعة الحبر على الركيزة (وسيلة الطباعة) والتي يمكن أن تكون قماشًا أو ورقًا أو بلاستيكًا، يشار إليها باسم آلات الطباعة. من خلال تطبيق الضغط على الركيزة، تنقل آلات الطباعة الحبر على وسيط الطباعة المستقر على منصة حبر مكونة من نوع متحرك.","fr": "On appelle machine d`impression toute machine utilisée pour imprimer de l`encre sur un support (support d`impression) qui peut être du tissu, du papier ou du plastique. En appliquant une pression sur le support, la machine d`impression transfère l`encre sur le support d`impression reposant sur une plate-forme encrée composée de caractères mobiles."}',
+                'value' => '{"en":"<p>At our core, we strive to be a trusted leader in the printing industry by delivering top-quality WGE France machines and reliable maintenance services. Our vision is to empower businesses with cutting-edge printing technology, backed by expert support, to ensure lasting performance and efficiency. We are committed to innovation, customer satisfaction, and long-term partnerships that drive success for our clients.</p>","ar":"<p dir=\\"rtl\\">نسعى جاهدين لنكون روادًا موثوقين في صناعة الطباعة، من خلال توفير آلات WGE France عالية الجودة وخدمات صيانة موثوقة. رؤيتنا هي تمكين الشركات من خلال تقنيات طباعة متطورة، بدعم من خبراء متخصصين، لضمان أداء وكفاءة مستدامين. نحن ملتزمون بالابتكار، ورضا العملاء، وبناء شراكات طويلة الأمد تضمن نجاح عملائنا.</p>","fr":"<p>Notre objectif principal est d\'être un leader de confiance dans le secteur de l\'impression en fournissant des machines WGE France de qualité supérieure et des services de maintenance fiables. Notre vision est de fournir aux entreprises des technologies d\'impression de pointe, soutenues par un accompagnement expert, pour garantir des performances et une efficacité durables. Nous nous engageons à innover, à satisfaire nos clients et à établir des partenariats durables pour assurer leur réussite.</p>"}',
                 'created_at' => '2024-06-20 15:31:48',
-                'updated_at' => '2024-12-09 22:38:34',
+                'updated_at' => '2025-05-01 11:22:11',
             ),
-            22 =>
+            22 => 
             array (
                 'id' => 23,
                 'key' => 'our_vision_primary_image',
-                'value' => '{"fr":"i1.jpg","ar":"i1.jpg","en":"i1.jpg"}',
+                'value' => '{"fr":"01JT5RKP8GWPZY9ZNMKJWJ0VW7.webp","ar":"i1.jpg","en":"i1.jpg"}',
                 'created_at' => '2024-06-20 15:31:48',
-                'updated_at' => '2025-04-27 17:37:57',
+                'updated_at' => '2025-05-01 11:09:49',
             ),
-            23 =>
+            23 => 
             array (
                 'id' => 24,
                 'key' => 'our_vision_second_image',
-                'value' => '{"fr":"i2.jpg","ar":"i2.jpg","en":"i2.jpg"}',
+                'value' => '{"fr":"01JT5RKP8WZVR2YZKRJT2M3E44.jpg","ar":"i2.jpg","en":"i2.jpg"}',
                 'created_at' => '2024-06-20 15:31:48',
-                'updated_at' => '2025-04-27 17:37:57',
+                'updated_at' => '2025-05-01 11:09:49',
             ),
-            24 =>
+            24 => 
             array (
                 'id' => 25,
                 'key' => 'our_vision_third_image',
-                'value' => '{"fr":"i3.jpg","ar":"i3.jpg","en":"i3.jpg"}',
+                'value' => '{"fr":"01JT5RKP97HSMAQGYZW0TF99QE.webp","ar":"i3.jpg","en":"i3.jpg"}',
                 'created_at' => '2024-06-20 15:31:48',
-                'updated_at' => '2025-04-27 17:37:57',
+                'updated_at' => '2025-05-01 11:09:49',
             ),
-            25 =>
+            25 => 
             array (
                 'id' => 26,
                 'key' => 'our_mission_section_title',
@@ -227,31 +227,31 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2024-06-24 15:30:07',
             ),
-            26 =>
+            26 => 
             array (
                 'id' => 27,
                 'key' => 'our_mission_description',
-            'value' => '{"en": "Any machine used in printing ink on the substrate (printing medium) which can be cloth, paper or plastic, is referred to as the printing machinery. By applying pressure to the substrate, the printing machinery transfers the ink on the printing medium resting on an inked platform composed of movable type.","ar": "أي آلة تستخدم في طباعة الحبر على الركيزة (وسيلة الطباعة) والتي يمكن أن تكون قماشًا أو ورقًا أو بلاستيكًا، يشار إليها باسم آلات الطباعة. من خلال تطبيق الضغط على الركيزة، تنقل آلات الطباعة الحبر على وسيط الطباعة المستقر على منصة حبر مكونة من نوع متحرك.","fr": "On appelle machine d`impression toute machine utilisée pour imprimer de l`encre sur un support (support d`impression) qui peut être du tissu, du papier ou du plastique. En appliquant une pression sur le support, la machine d`impression transfère l`encre sur le support d`impression reposant sur une plate-forme encrée composée de caractères mobiles."}',
+                'value' => '{"en":"<p>At <strong>WGE France</strong>, our mission is to deliver trusted, high-performance printing machines to businesses around the world, while providing exceptional maintenance and customer support. We are committed to connecting buyers and sellers of quality printing equipment, ensuring that each transaction is seamless, transparent, and beneficial for all parties.<br><br>Through continuous innovation and dedication to service excellence, we aim to be a reliable partner in the printing industry—helping our clients maximize productivity, reduce downtime, and extend the lifespan of their machines.</p>","ar":"<p dir=\\"rtl\\">في WGE فرنسا، مهمتنا هي توفير آلات طباعة موثوقة وعالية الأداء للشركات حول العالم، مع توفير صيانة ودعم عملاء استثنائيين. نلتزم بربط المشترين والبائعين لمعدات الطباعة عالية الجودة، وضمان سلاسة وشفافية كل معاملة وتحقيق الفائدة لجميع الأطراف.<br><br>من خلال الابتكار المستمر والتفاني في تقديم خدمة متميزة، نهدف إلى أن نكون شريكًا موثوقًا به في قطاع الطباعة، ونساعد عملاءنا على زيادة إنتاجيتهم وتقليل فترات التوقف عن العمل وإطالة عمر آلاتهم.</p>","fr":"<p>Chez <strong>WGE France</strong>, notre mission est de fournir des machines d\'impression fiables et performantes aux entreprises du monde entier, tout en assurant une maintenance et un support client exceptionnels. Nous nous engageons à mettre en relation acheteurs et vendeurs de matériel d\'impression de qualité, garantissant ainsi une transaction fluide, transparente et avantageuse pour toutes les parties.<br><br>Grâce à une innovation continue et à notre engagement envers l\'excellence du service, nous aspirons à être un partenaire fiable dans le secteur de l\'impression, aidant nos clients à optimiser leur productivité, à réduire les temps d\'arrêt et à prolonger la durée de vie de leurs machines.</p>"}',
                 'created_at' => '2024-06-20 15:31:48',
-                'updated_at' => '2024-12-09 22:38:34',
+                'updated_at' => '2025-05-01 11:28:51',
             ),
-            27 =>
+            27 => 
             array (
                 'id' => 28,
                 'key' => 'our_mission_primary_image',
-                'value' => '{"fr":"i5.jpg","ar":"i5.jpg","en":"i5.jpg"}',
+                'value' => '{"fr":"01JT5T5E48B13FTZ8PZ50AW3ZJ.jpg","ar":"i5.jpg","en":"i5.jpg"}',
                 'created_at' => '2024-06-20 15:31:48',
-                'updated_at' => '2025-04-27 17:37:57',
+                'updated_at' => '2025-05-01 11:36:59',
             ),
-            28 =>
+            28 => 
             array (
                 'id' => 29,
                 'key' => 'our_mission_second_image',
-                'value' => '{"fr":"i6.jpg","ar":"i6.jpg","en":"i6.jpg"}',
+                'value' => '{"fr":"01JT5T5E4E0W0XGYXJC9RVTTX3.jpg","ar":"i6.jpg","en":"i6.jpg"}',
                 'created_at' => '2024-06-20 15:31:48',
-                'updated_at' => '2025-04-27 17:37:57',
+                'updated_at' => '2025-05-01 11:36:59',
             ),
-            29 =>
+            29 => 
             array (
                 'id' => 30,
                 'key' => 'about_secondary_title',
@@ -259,7 +259,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            30 =>
+            30 => 
             array (
                 'id' => 31,
                 'key' => 'about_header_image',
@@ -267,15 +267,15 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-04-27 17:37:57',
             ),
-            31 =>
+            31 => 
             array (
                 'id' => 32,
                 'key' => 'our_vision_header_image',
-                'value' => '{"fr":"i8.jpg","ar":"i8.jpg","en":"i8.jpg"}',
+                'value' => '{"fr":"01JT5QMZMWH38QZPWK5C0QQJF3.jpg","ar":"i8.jpg","en":"i8.jpg"}',
                 'created_at' => '2024-12-08 09:05:31',
-                'updated_at' => '2025-04-27 17:37:57',
+                'updated_at' => '2025-05-01 10:53:03',
             ),
-            32 =>
+            32 => 
             array (
                 'id' => 33,
                 'key' => 'our_vision_section_second_title',
@@ -283,15 +283,15 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            33 =>
+            33 => 
             array (
                 'id' => 34,
                 'key' => 'our_mission_header_image',
-                'value' => '{"fr":"i8.jpg","ar":"i8.jpg","en":"i8.jpg"}',
+                'value' => '{"fr":"01JT5T5E40FD16W0E49TCMBX8B.jpg","ar":"i8.jpg","en":"i8.jpg"}',
                 'created_at' => '2024-12-08 09:05:31',
-                'updated_at' => '2025-04-27 17:37:57',
+                'updated_at' => '2025-05-01 11:36:59',
             ),
-            34 =>
+            34 => 
             array (
                 'id' => 35,
                 'key' => 'our_mission_section_secondary_title',
@@ -299,7 +299,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            35 =>
+            35 => 
             array (
                 'id' => 36,
                 'key' => 'faq_section_title',
@@ -307,7 +307,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            36 =>
+            36 => 
             array (
                 'id' => 37,
                 'key' => 'faq_section_secondary_title',
@@ -315,7 +315,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            37 =>
+            37 => 
             array (
                 'id' => 38,
                 'key' => 'faq_header_image',
@@ -323,7 +323,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-04-27 17:37:57',
             ),
-            38 =>
+            38 => 
             array (
                 'id' => 39,
                 'key' => 'contact_section_title',
@@ -331,7 +331,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            39 =>
+            39 => 
             array (
                 'id' => 40,
                 'key' => 'contact_section_secondary_title',
@@ -339,7 +339,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            40 =>
+            40 => 
             array (
                 'id' => 41,
                 'key' => 'contact_header_image',
@@ -347,7 +347,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-04-27 17:37:57',
             ),
-            41 =>
+            41 => 
             array (
                 'id' => 42,
                 'key' => 'contact_section_address',
@@ -355,7 +355,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            42 =>
+            42 => 
             array (
                 'id' => 43,
                 'key' => 'contact_section_address_content',
@@ -363,7 +363,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            43 =>
+            43 => 
             array (
                 'id' => 44,
                 'key' => 'contact_section_whatsapp',
@@ -371,7 +371,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            44 =>
+            44 => 
             array (
                 'id' => 45,
                 'key' => 'contact_section_whatsapp_content',
@@ -379,7 +379,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            45 =>
+            45 => 
             array (
                 'id' => 46,
                 'key' => 'contact_telephone',
@@ -387,7 +387,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            46 =>
+            46 => 
             array (
                 'id' => 47,
                 'key' => 'contact_telephone_content',
@@ -395,7 +395,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            47 =>
+            47 => 
             array (
                 'id' => 48,
                 'key' => 'contact_email_title',
@@ -403,15 +403,15 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            48 =>
+            48 => 
             array (
                 'id' => 49,
                 'key' => 'contact_email_content',
                 'value' => '{"en":"Admin@email.com","fr":null}',
                 'created_at' => '2024-12-08 09:05:31',
-                'updated_at' => '2025-04-28 20:02:03',
+                'updated_at' => '2025-05-01 11:28:51',
             ),
-            49 =>
+            49 => 
             array (
                 'id' => 50,
                 'key' => 'home_content_over_slider_header',
@@ -419,7 +419,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            50 =>
+            50 => 
             array (
                 'id' => 51,
                 'key' => 'home_content_over_slider_description',
@@ -427,7 +427,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-04-27 17:38:23',
             ),
-            51 =>
+            51 => 
             array (
                 'id' => 52,
                 'key' => 'product_header_image',
@@ -435,7 +435,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2025-04-27 17:37:57',
             ),
-            52 =>
+            52 => 
             array (
                 'id' => 53,
                 'key' => 'logo',
@@ -444,7 +444,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'updated_at' => '2025-04-27 17:37:57',
             ),
         ));
-
-
+        
+        
     }
 }

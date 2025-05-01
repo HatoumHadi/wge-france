@@ -1,6 +1,6 @@
 <div>
     <section id="contact">
-        <div class="relative w-full h-[400px]">
+        <div class="relative w-full h-[400px] mt-[73px]">
             <img src="{{ asset($contact_header_image) }}" class="w-full h-full object-cover" alt="points">
 
             <div class="absolute inset-0 flex items-center justify-center text-center bg-black/50">

@@ -1,7 +1,7 @@
 <div>
     <section id="our_mission">
 
-        <div class="relative w-full h-[400px]">
+        <div class="relative w-full h-[400px] mt-[73px]">
             <img src="{{ asset($our_mission_header_image) }}" class="w-full h-full object-cover" alt="points">
 
             <div class="absolute inset-0 flex items-center justify-center text-center bg-black/50">
@@ -30,7 +30,7 @@
 
 
         <div class="container mx-auto wow fadeInUp" data-wow-delay=".2s">
-            <div class="-mx-4 flex flex-wrap items-center">
+            <div class="-mx-4 flex flex-wrap items-center mb-12 mt-12">
                 <div class="sm:hidden w-full px-4 lg:w-1/2">
                     <div class="mb-12 max-w-[540px] lg:mb-0 lg:ml-7">
                         <p class="mt-4 sm:mt-0 text-center sm:text-left mb-10 font-size-content leading-relaxed text-body-color dark:text-dark-6">
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
-                            <div class="mb-4 sm:mb-8 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px]">
+                            <div class="mb-4 sm:mb-0 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px]">
                                 <img src="{{ asset($second_image) }}" alt="about image"
                                      class="h-full w-full object-cover object-center"/>
                             </div>
