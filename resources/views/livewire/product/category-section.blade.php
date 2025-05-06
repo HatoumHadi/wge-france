@@ -44,7 +44,7 @@
                                     wire:model.live="selectedCategories.{{ $child->id }}"
                                     @click="open = !open">
                                 <label for="selectedCategories.{{ $child->id }}"
-                                       class="text-sm font-medium text-gray-700"
+                                       class="text-sm font-medium {{ $selectedCategories[$child->id] ?? false ? 'text-primary' : 'text-gray-700' }}"
                                        @click="open = !open">
                                     {{ $child->name }}
                                 </label>
