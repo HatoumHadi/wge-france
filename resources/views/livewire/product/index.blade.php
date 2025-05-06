@@ -57,6 +57,8 @@
                 <div class="relative mb-4 w-full">
                     <input
                         type="text"
+                        id="product-search"
+                        name="search"
                         wire:model.live="search"
                         placeholder="{{ __('trans.product_search_placeholder') }}"
                         class="w-full p-4 text-black text-xs sm:text-sm border border-gray-300 rounded focus-visible:border-primary focus:ring-1 focus:ring-primary focus:outline-none pr-12"/>

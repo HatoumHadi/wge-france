@@ -13,8 +13,8 @@
                         <div class="flex items-center space-x-2">
                             <input
                                 type="checkbox"
-                                name="selectedCategories.{{ $category->id }}"
-                                id="selectedCategories.{{ $category->id }}"
+                                name="filterSelectedCategories.{{ $category->id }}"
+                                id="filterSelectedCategories.{{ $category->id }}"
                                 value="{{ $category->id }}"
                                 wire:model.live="selectedCategories.{{ $category->id }}"
                                 x-ref="checkbox"
@@ -41,13 +41,13 @@
                                 <div class="flex items-center space-x-2">
                                     <input
                                         type="checkbox"
-                                        name="selectedCategories.{{ $child->id }}"
-                                        id="selectedCategories.{{ $child->id }}"
+                                        name="selected_Categories.{{ $child->id }}"
+                                        id="selected_Categories.{{ $child->id }}"
                                         value="{{ $child->id }}"
                                         wire:model.live="selectedCategories.{{ $child->id }}"
                                         @click="open = !open">
                                     <label for="selectedCategories.{{ $child->id }}"
-                                           class="text-sm font-medium text-gray-700"
+                                           class="text-sm font-medium {{ $selectedCategories[$category->id] ?? false ? 'text-primary' : 'text-gray-700' }}"
                                            @click="open = !open">
                                         {{ $child->name }}
                                     </label>

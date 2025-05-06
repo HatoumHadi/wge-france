@@ -201,15 +201,19 @@
                     <script>
                         document.addEventListener('DOMContentLoaded', () => {
                             if (window.innerWidth > 768) {
-                                document.querySelector('.hover-trigger').addEventListener('mouseenter', () => {
-                                    Alpine.store('open', true);
-                                });
-                                document.querySelector('.hover-trigger').addEventListener('mouseleave', () => {
-                                    Alpine.store('open', false);
-                                });
+                                const hoverElement = document.querySelector('.hover-trigger');
+                                if (hoverElement) {
+                                    hoverElement.addEventListener('mouseenter', () => {
+                                        Alpine.store('open', true);
+                                    });
+                                    hoverElement.addEventListener('mouseleave', () => {
+                                        Alpine.store('open', false);
+                                    });
+                                }
                             }
                         });
                     </script>
+
                 </div>
             </div>
         </div>
