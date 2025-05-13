@@ -601,6 +601,11 @@ class LanguageLineSeeder extends Seeder
                 'ar' => 'آلة الطباعة.',
                 'fr' => 'Machine d`impression.',
             ],
+            'Your Email' => [
+                'en' => 'Your Email',
+                'ar' => 'بريدك الإلكتروني',
+                'fr' => 'Votre e-mail',
+            ],
         ];
 
         foreach ($lines as $english => $translations) {

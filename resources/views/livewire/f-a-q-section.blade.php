@@ -33,7 +33,7 @@
                 <div class="mb-4 w-10/12 sm:w-4/5 border rounded-2xl mt-6">
                     <div class="flex items-center mx-4">
                         <div
-                            class="flex items-center justify-center h-8 w-8 rounded-full bg-primary text-white text-lg font-bold">
+                            class="flex items-center justify-center h-8 w-8 rounded-full bg-primary text-white text-lg font-bold {{ app()->getLocale() == 'ar' ? 'ml-6' : '' }}">
                             Q
                         </div>
                         <div class="pt-6 pl-6 pb-6 text-base w-full">{{$faq->question}}</div>
@@ -41,7 +41,7 @@
 
                     <div class="border-t border-gray-200 mx-4 mb-6 text-sm flex items-center">
                         <div
-                            class="flex items-center justify-center h-8 w-8 rounded-full bg-gray-400 text-white text-lg font-bold">
+                            class="flex items-center justify-center h-8 w-8 rounded-full bg-gray-400 text-white text-lg font-bold {{ app()->getLocale() == 'ar' ? 'ml-6' : '' }}">
                             A
                         </div>
                         <div class="pt-6 pl-6 pb-6 text-base w-full">

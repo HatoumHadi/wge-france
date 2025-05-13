@@ -30,7 +30,7 @@
         <div class="flex flex-col justify-center items-center mt-12">
             <div class="flex flex-col sm:flex-row justify-center items-center sm:space-x-4 w-3/4 mx-auto">
                 <div
-                    class="p-6 border border-primary rounded-2xl w-full sm:w-1/4 flex flex-col justify-center items-center text-center h-40">
+                    class="p-6 border border-primary rounded-2xl w-full sm:w-1/4 flex flex-col justify-center items-center text-center h-40 {{ app()->getLocale() == 'ar' ? 'ml-4' : '' }}">
                     <i class="fa-solid fa-location-dot text-primary text-3xl"></i>
                     <h3 class="text-2xl font-bold text-primary mt-3">{{$contact_section_address}}</h3>
                     <p class="mt-3">{{$contact_section_address_content}}</p>
@@ -125,7 +125,7 @@
                             name="email"
                             required
                             class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder:text-gray-400"
-                            placeholder="Your Email">
+                            placeholder="{{ __('trans.your_email') }}">
                     </div>
                     <div class="mb-4">
                         @error('email') <span class="error font-bold text-red-500">{{ $message }}</span> @enderror
