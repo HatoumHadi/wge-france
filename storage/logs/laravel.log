@@ -6262,3 +6262,15 @@ Did you mean this?
 #77 C:\\Program Files\\Herd\\resources\\app.asar.unpacked\\resources\\valet\\server.php(139): require('C:\\\\Users\\\\HP\\\\Des...')
 #78 {main}
 "} 
+[2025-05-09 11:12:33] local.ERROR: Maximum execution time of 30 seconds exceeded {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at C:\\Users\\HP\\Desktop\\Hadi Private\\Private Project\\wge-france\\storage\\framework\\views\\815acc9135e1eac892213aabf1eadbf2.php:1)
+[stacktrace]
+#0 {main}
+"} 
+[2025-05-13 19:39:58] local.ERROR: Maximum execution time of 30 seconds exceeded {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at C:\\Users\\HP\\Desktop\\Hadi Private\\Private Project\\wge-france\\storage\\framework\\views\\41d60880ef5636f4532bfddafc2bc4be.php:1)
+[stacktrace]
+#0 {main}
+"} 
+[2025-05-13 19:42:38] local.ERROR: Maximum execution time of 30 seconds exceeded {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at C:\\Users\\HP\\Desktop\\Hadi Private\\Private Project\\wge-france\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:55)
+[stacktrace]
+#0 {main}
+"} 
