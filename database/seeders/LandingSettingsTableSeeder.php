@@ -391,7 +391,7 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 47,
                 'key' => 'contact_telephone_content',
-                'value' => '{"en":"+33 6 80630049","ar":"+33 6 80630049","fr":"+33 6 80630049"}',
+                'value' => '{"fr":"+33 6 80630049"}',
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
@@ -407,7 +407,7 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 49,
                 'key' => 'contact_email_content',
-                'value' => '{"en":"Admin@email.com","fr":null}',
+                'value' => '{"fr":"wge@orange.fr"}',
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-05-01 11:28:51',
             ),
