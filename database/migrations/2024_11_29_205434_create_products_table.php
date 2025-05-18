@@ -14,21 +14,21 @@ return new class extends Migration {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->text('name');
+            $table->longText('description')->nullable();
             $table->string('slug')->unique();
             $table->text('model')->nullable();
             $table->text('brand');
             $table->text('type')->nullable();
-            $table->integer('speed')->nullable();
+            $table->text('speed')->nullable();
             $table->text('resolution')->nullable();
             $table->text('max_print_size')->nullable();
             $table->boolean('color_capability')->default(false);
             $table->boolean('duplex')->default(false);
             $table->text('connectivity')->nullable();
-            $table->integer('power_consumption')->nullable();
+            $table->text('power_consumption')->nullable();
             $table->json('condition')->nullable();
             $table->integer('stock_quantity')->default(1);
             $table->double('price')->nullable();
-            $table->longText('description')->nullable();
             $table->integer('warranty')->nullable();
             $table->year('manufacture_year')->nullable();
             $table->text('images')->nullable();

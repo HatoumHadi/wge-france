@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 
 class ProductsTableSeeder extends Seeder
 {
+
     /**
      * Auto generated seed file
      *
@@ -13,109 +14,43 @@ class ProductsTableSeeder extends Seeder
      */
     public function run()
     {
+
+
         \DB::table('products')->delete();
 
-        \DB::table('products')->insert(array(
-            0 => array(
+        \DB::table('products')->insert(array (
+            0 =>
+            array (
                 'id' => 1,
-                'name' => '{"ar": "كاثلين بوير", "en": "Kathlyn Boyer", "fr": "Kathlyn Boyer"}',
-                'slug' => 'kathlyn-boyer',
-                'model' => '{"ar": "النموذج tkn", "en": "Model tkn", "fr": "Modèle tkn"}',
-                'brand' => '{"ar": "شينر-ووترز", "en": "Schinner-Waters", "fr": "Schinner-Waters"}',
-                'type' => '{"ar": "الليزر", "en": "Laser", "fr": "Laser"}',
-                'speed' => 41,
-                'resolution' => '{"ar": "1200 نقطة في البوصة", "en": "1200 DPI", "fr": "1200 DPI"}',
-                'max_print_size' => '{"ar": "رسالة", "en": "Letter", "fr": "Lettre"}',
+                'name' => '{"fr": "HEIDELBERG", "ar": "هايدلبرغ", "en": "HEIDELBERG"}',
+                'description' => json_encode([
+                    "fr" => "La Heidelberg GTOV signifie GTO (Grande Format Tiegel Offset) + V (Vierfarben), ce qui indique qu'il s'agit d'une presse offset à alimentation feuille avec quatre couleurs. Elle est couramment utilisée pour les travaux d'impression commerciaux tels que les brochures, l'emballage, les cartes de visite et les catalogues. La machine prend en charge le format A3, jusqu'à environ 36 x 52 cm. Le « V » dans GTOV signifie « Vierfarben » en allemand, ce qui veut dire « quatre couleurs ». La machine est équipée de 4 unités d'impression pour le Cyan, Magenta, Jaune et Noir (CMJN), permettant l'impression en couleur complète en un seul passage.",
+                    "en" => "The Heidelberg GTOV stands for GTO (Großformat-Tiegel Offset) + V (Vierfarben), meaning it is a 4-color sheet-fed offset printing machine. It is commonly used for commercial printing jobs such as brochures, packaging, business cards, and catalogs. The machine supports A3 format paper sizes, up to approximately 36 x 52 cm. The \"V\" in GTOV means \"Vierfarben\" in German, which translates to \"four colors.\" The machine is equipped with 4 printing units for Cyan, Magenta, Yellow, and Black (CMYK), allowing full-color printing in a single pass",
+                    "ar" => "تعني Heidelberg GTOV: GTO (آلة الطباعة الأوفست الكبيرة) + V (الألوان الأربعة)، مما يعني أنها آلة طباعة أوفست تغذية بالورق مزودة بأربعة ألوان. تُستخدم عادةً في أعمال الطباعة التجارية مثل الكتيبات، التعبئة والتغليف، بطاقات الأعمال، والكتالوجات. تدعم الآلة حجم ورق A3 يصل إلى حوالي 36 × 52 سم.الحرف \"V\" في GTOV يعني \"Vierfarben\" بالألمانية، والذي يعني \"الألوان الأربعة\". تحتوي الآلة على 4 وحدات طباعة لكل من السماوي (السيان)، الأرجواني (المجنطة)، الأصفر، والأسود (CMYK)، مما يسمح بالطباعة بالألوان الكاملة في مرور واحد."
+                ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES),
+                'slug' => 'heidelberg',
+                'model' => '{"fr":"GTOV"}',
+                'brand' => '{"ar": "هايدلبرغ", "en": "HEIDELBERG", "fr": "HEIDELBERG"}',
+                'type' => '{"ar": "سلسلة 690015", "en": "serie 690015", "fr": "serie 690015"}',
+                'speed' => '{"ar": "ما يصل إلى 8000 ورقة في الساعة", "en": "Up to 8,000 sheets per hour", "fr": "Jusqu`à 8 000 feuilles par heure"}',
+                'resolution' => NULL,
+                'max_print_size' => '{"ar": "34 × 50 سم (حوالي 13.39 × 19.69 بوصة)", "en": "34 x 50 cm (approximately 13.39 x 19.69 inches)", "fr": "34 x 50 cm (environ 13,39 x 19,69 pouces)"}',
                 'color_capability' => 1,
                 'duplex' => 1,
-                'connectivity' => '{"ar": "يو اس بي", "en": "USB", "fr": "USB"}',
-                'power_consumption' => 297,
-                'condition' => '{"ar": "مُعاد تصنيعه", "en": "Refurbished", "fr": "Reconditionné"}',
-                'stock_quantity' => 43,
-                'price' => 1968.04,
-                'description' => '{"ar": "نص عربي للوصف.", "en": "Quasi aperiam quo atque quo.", "fr": "Quasi aperiam quo atque quo."}',
-                'warranty' => 2,
-                'manufacture_year' => '1973',
-                'images' => '["i1.jpg", "i2.jpg", "i3.jpg"]',
+                'connectivity' => '{"ar": "لا يوجد اتصال رقمي أو شبكي", "en": "No digital or network connectivity", "fr": "Aucune connectivité numérique ou réseau"}',
+                'power_consumption' => '{"ar": "من 4 إلى 6 كيلو وات أثناء التشغيل", "en": "4 to 6 kW during operation", "fr": "4 à 6 kW en fonctionnement"}',
+                'condition' => '{"ar": "مستخدم", "en": "Used", "fr": "Utilisée"}',
+                'stock_quantity' => 1,
+                'price' => 8500.0,
+                'warranty' => NULL,
+                'manufacture_year' => '1987',
+                'images' => '["products\\/01JVHFFSPJNCVQ09DJQ5ZCW2EA.webp","products\\/01JVHFFSPX6HM03X5SCNPWWHES.webp"]',
                 'category_id' => 1,
                 'created_at' => '2025-01-11 13:29:02',
-                'updated_at' => '2025-01-11 13:29:02',
-            ),
-            1 => array(
-                'id' => 2,
-                'name' => '{"ar": "لو ديكو", "en": "Lou Deckow", "fr": "Lou Deckow"}',
-                'slug' => 'lou-deckow',
-                'model' => '{"ar": "النموذج egi", "en": "Model egi", "fr": "Modèle egi"}',
-                'brand' => '{"ar": "جيردي-سكيلز", "en": "Jerde-Skiles", "fr": "Jerde-Skiles"}',
-                'type' => '{"ar": "الحراري", "en": "Thermal", "fr": "Thermique"}',
-                'speed' => 47,
-                'resolution' => '{"ar": "300 نقطة في البوصة", "en": "300 DPI", "fr": "300 DPI"}',
-                'max_print_size' => '{"ar": "A4", "en": "A4", "fr": "A4"}',
-                'color_capability' => 1,
-                'duplex' => 0,
-                'connectivity' => '{"ar": "يو اس بي", "en": "USB", "fr": "USB"}',
-                'power_consumption' => 93,
-                'condition' => '{"ar": "مستعمل", "en": "Used", "fr": "Utilisé"}',
-                'stock_quantity' => 2,
-                'price' => 3931.68,
-                'description' => '{"ar": "نص عربي للوصف.", "en": "Odio aliquid voluptatem id.", "fr": "Odio aliquid voluptatem id."}',
-                'warranty' => 2,
-                'manufacture_year' => '1975',
-                'images' => '["i1.jpg", "i2.jpg", "i3.jpg"]',
-                'category_id' => 2,
-                'created_at' => '2025-01-11 13:29:02',
-                'updated_at' => '2025-01-11 13:29:02',
-            ),
-            2 => array(
-                'id' => 3,
-                'name' => '{"ar": "كاثلين جيبسون", "en": "Kathleen Gibson", "fr": "Kathleen Gibson"}',
-                'slug' => 'kathleen-gibson',
-                'model' => '{"ar": "النموذج wsn", "en": "Model wsn", "fr": "Modèle wsn"}',
-                'brand' => '{"ar": "جولدز, تورفي و كيرلوك", "en": "Goldner, Torphy and Kerluke", "fr": "Goldner, Torphy and Kerluke"}',
-                'type' => '{"ar": "الليزر", "en": "Laser", "fr": "Laser"}',
-                'speed' => 36,
-                'resolution' => '{"ar": "600 نقطة في البوصة", "en": "600 DPI", "fr": "600 DPI"}',
-                'max_print_size' => '{"ar": "A3", "en": "A3", "fr": "A3"}',
-                'color_capability' => 1,
-                'duplex' => 0,
-                'connectivity' => '{"ar": "إيثرنت", "en": "Ethernet", "fr": "Ethernet"}',
-                'power_consumption' => 134,
-                'condition' => '{"ar": "جديد", "en": "New", "fr": "Nouveau"}',
-                'stock_quantity' => 47,
-                'price' => 3046.57,
-                'description' => '{"ar": "نص عربي للوصف.", "en": "Illo voluptatem ut delectus illum labore.", "fr": "Illo voluptatem ut delectus illum labore."}',
-                'warranty' => 2,
-                'manufacture_year' => '2012',
-                'images' => '["i1.jpg", "i2.jpg", "i3.jpg"]',
-                'category_id' => 3,
-                'created_at' => '2025-01-11 13:29:02',
-                'updated_at' => '2025-01-11 13:29:02',
-            ),
-            3 => array(
-                'id' => 4,
-                'name' => '{"ar": "أبيغيل بفيفر", "en": "Abigail Pfeffer", "fr": "Abigail Pfeffer"}',
-                'slug' => 'abigail-pfeffer',
-                'model' => '{"ar": "النموذج qod", "en": "Model qod", "fr": "Modèle qod"}',
-                'brand' => '{"ar": "روزينباوم-شيلدز", "en": "Rosenbaum-Shields", "fr": "Rosenbaum-Shields"}',
-                'type' => '{"ar": "دوت ماتريكس", "en": "Dot Matrix", "fr": "Dot Matrix"}',
-                'speed' => 100,
-                'resolution' => '{"ar": "600 نقطة في البوصة", "en": "600 DPI", "fr": "600 DPI"}',
-                'max_print_size' => '{"ar": "رسالة", "en": "Letter", "fr": "Lettre"}',
-                'color_capability' => 1,
-                'duplex' => 0,
-                'connectivity' => '{"ar": "يو اس بي", "en": "USB", "fr": "USB"}',
-                'power_consumption' => 364,
-                'condition' => '{"ar": "جديد", "en": "New", "fr": "Nouveau"}',
-                'stock_quantity' => 41,
-                'price' => 3279.58,
-                'description' => '{"ar": "نص عربي للوصف.", "en": "Id fugiat excepturi nihil animi.", "fr": "Id fugiat excepturi nihil animi."}',
-                'warranty' => 3,
-                'manufacture_year' => '2007',
-                'images' => '["i1.jpg", "i2.jpg", "i3.jpg"]',
-                'category_id' => 4,
-                'created_at' => '2025-01-11 13:29:02',
-                'updated_at' => '2025-01-11 13:29:02',
+                'updated_at' => '2025-05-18 10:36:59',
             ),
         ));
+
+
     }
 }

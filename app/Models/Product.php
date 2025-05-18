@@ -13,7 +13,19 @@ class Product extends Model
 
     protected $guarded = [];
 
-    public $translatable = ['name', 'model', 'brand', 'type', 'resolution', 'max_print_size', 'connectivity', 'condition', 'description'];
+    public $translatable = [
+        'name',
+        'description',
+        'model',
+        'brand',
+        'speed',
+        'type',
+        'resolution',
+        'power_consumption',
+        'max_print_size',
+        'connectivity',
+        'condition',
+    ];
 
     public function category(): BelongsTo
     {

@@ -28,9 +28,10 @@
                         <div class="swiper_2 mySwiper_2">
                             <div class="swiper-wrapper">
                                 @foreach(json_decode($product->images, true) as $index => $image)
-                                    <div class="swiper-slide">
-                                        <img src="{{ asset('storage/' . $image) }}" alt="{{ $product->name }}"
-                                             class="w-full h-72 object-cover gallery-image cursor-pointer">
+                                    <div class="swiper-slide overflow-hidden flex items-center justify-center bg-gray-100 rounded-xl shadow-md">
+                                        <img src="{{ asset('storage/' . $image) }}"
+                                             alt="{{ $product->name }}"
+                                             class="w-full h-full object-cover gallery-image cursor-pointer transition-transform duration-300 hover:scale-105" loading="lazy">
                                     </div>
                                 @endforeach
                             </div>
@@ -82,7 +83,7 @@
                             </tr>
                             <tr class="border-b text-center">
                                 <td class="font-semibold text-gray-800 py-2 px-4">{{__('trans.product_resolution')}}</td>
-                                <td class="text-gray-700 py-2 px-4">{{ $product->resolution }}</td>
+                                <td class="text-gray-700 py-2 px-4">{{ $product->resolution?? '-' }}</td>
                             </tr>
                             <tr class="border-b text-center">
                                 <td class="font-semibold text-gray-800 py-2 px-4">{{__('trans.product_max_print_size')}}</td>
@@ -110,7 +111,7 @@
                             </tr>
                             <tr class="border-b text-center">
                                 <td class="font-semibold text-gray-800 py-2 px-4">{{__('trans.product_warranty')}}</td>
-                                <td class="text-gray-700 py-2 px-4">{{ $product->warranty }}</td>
+                                <td class="text-gray-700 py-2 px-4">{{ $product->warranty?? '-' }}</td>
                             </tr>
                             <tr class="border-b text-center">
                                 <td class="font-semibold text-gray-800 py-2 px-4">{{__('trans.product_manufacture_year')}}</td>
@@ -213,8 +214,23 @@
                         // Event listeners
                         cancelButton.addEventListener("click", () => document.body.removeChild(overlay));
 
+                        document.addEventListener("keydown", function(event) {
+                            if (event.key === "Escape") {
+                                document.body.removeChild(overlay)
+                            }
+                        });
+
+
                         leftButton.addEventListener("click", () => navigateFullscreen(-1, overlay));
                         rightButton.addEventListener("click", () => navigateFullscreen(1, overlay));
+
+                        document.addEventListener("keydown", (event) => {
+                            if (event.key === "ArrowLeft") {
+                                navigateFullscreen(-1, overlay); // Left arrow key
+                            } else if (event.key === "ArrowRight") {
+                                navigateFullscreen(1, overlay); // Right arrow key
+                            }
+                        });
                     }
                 });
 

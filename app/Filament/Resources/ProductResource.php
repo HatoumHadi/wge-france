@@ -61,8 +61,7 @@ class ProductResource extends Resource
                     ->maxLength(255),
 
                 Forms\Components\TextInput::make('speed')
-                    ->label(__('trans.product_speed'))
-                    ->numeric(),
+                    ->label(__('trans.product_speed')),
 
                 Forms\Components\TextInput::make('resolution')
                     ->label(__('trans.product_resolution'))
@@ -78,8 +77,7 @@ class ProductResource extends Resource
                     ->maxLength(255),
 
                 Forms\Components\TextInput::make('power_consumption')
-                    ->label(__('trans.product_power_consumption'))
-                    ->numeric(),
+                    ->label(__('trans.product_power_consumption')),
 
                 Forms\Components\TextInput::make('condition')
                     ->label(__('trans.product_condition'))
