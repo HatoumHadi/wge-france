@@ -135,9 +135,9 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 15,
                 'key' => 'header_images',
-                'value' => '{"fr":"[\\"01JSVFRZ4MAMV254EH3E7ZTWCX.jpg\\",\\"01JSVFRZ4YNQY00GBC10GKB6TQ.jpg\\",\\"01JSVFRZ568DCB9JZ2QNTNX82Y.jpg\\",\\"01JSVFRZ5FNRVPRWVJCZCECSEZ.jpg\\"]","ar":"[\\"01JSVFRZ4MAMV254EH3E7ZTWCX.jpg\\",\\"01JSVFRZ4YNQY00GBC10GKB6TQ.jpg\\",\\"01JSVFRZ568DCB9JZ2QNTNX82Y.jpg\\",\\"01JSVFRZ5FNRVPRWVJCZCECSEZ.jpg\\"]","en":"[\\"01JSVFRZ4MAMV254EH3E7ZTWCX.jpg\\",\\"01JSVFRZ4YNQY00GBC10GKB6TQ.jpg\\",\\"01JSVFRZ568DCB9JZ2QNTNX82Y.jpg\\",\\"01JSVFRZ5FNRVPRWVJCZCECSEZ.jpg\\"]"}',
+                'value' => '{"fr":"[\\"01JSVFRZ4MAMV254EH3E7ZTWCX.jpg\\",\\"01JSVFRZ4YNQY00GBC10GKB6TQ.jpg\\",\\"01JSVFRZ568DCB9JZ2QNTNX82Y.jpg\\",\\"01JSVFRZ5FNRVPRWVJCZCECSEZ.jpg\\",\\"01JVHCH68YKTEKX593KN7EAGXC.jpg\\",\\"01JVHCH69BNRPHTBY7QPE8P0VD.jpg\\"]","ar":"[\\"01JSVFRZ4MAMV254EH3E7ZTWCX.jpg\\",\\"01JSVFRZ4YNQY00GBC10GKB6TQ.jpg\\",\\"01JSVFRZ568DCB9JZ2QNTNX82Y.jpg\\",\\"01JSVFRZ5FNRVPRWVJCZCECSEZ.jpg\\"]","en":"[\\"01JSVFRZ4MAMV254EH3E7ZTWCX.jpg\\",\\"01JSVFRZ4YNQY00GBC10GKB6TQ.jpg\\",\\"01JSVFRZ568DCB9JZ2QNTNX82Y.jpg\\",\\"01JSVFRZ5FNRVPRWVJCZCECSEZ.jpg\\"]"}',
                 'created_at' => '2024-12-08 09:05:31',
-                'updated_at' => '2025-04-27 17:37:57',
+                'updated_at' => '2025-05-18 09:45:19',
             ),
             15 =>
             array (
@@ -343,9 +343,9 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 41,
                 'key' => 'contact_header_image',
-                'value' => '{"fr":"01JVH538CSN7MSA27H2S0J6P00.jpg"}',
+                'value' => '{"fr":"01JVHCDFMPSCEXT1XJTWKMS6P8.jpg"}',
                 'created_at' => '2024-12-08 09:05:31',
-                'updated_at' => '2025-05-18 07:35:22',
+                'updated_at' => '2025-05-18 09:43:17',
             ),
             41 =>
             array (
@@ -431,9 +431,9 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 52,
                 'key' => 'product_header_image',
-                'value' => '{"fr":"i8.jpg","ar":"i8.jpg","en":"i8.jpg"}',
+                'value' => '{"fr":"01JVHCC5RT0B9AXHVVQBD1PFQ2.jpg"}',
                 'created_at' => '2024-06-20 15:31:48',
-                'updated_at' => '2025-04-27 17:37:57',
+                'updated_at' => '2025-05-18 09:42:35',
             ),
             52 =>
             array (
