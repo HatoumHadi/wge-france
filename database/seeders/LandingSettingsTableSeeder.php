@@ -159,7 +159,7 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 18,
                 'key' => 'about_video',
-                'value' => '{"fr":"about-us/vid-1.mp4","ar":"video1.mp4","en":"video1.mp4"}',
+                'value' => '{"fr":"about-us/vid-1.mp4"}',
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-04-28 20:02:03',
             ),
@@ -199,7 +199,7 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 23,
                 'key' => 'our_vision_primary_image',
-                'value' => '{"fr":"01JT5RKP8GWPZY9ZNMKJWJ0VW7.webp","ar":"i1.jpg","en":"i1.jpg"}',
+                'value' => '{"fr":"01JT5RKP8GWPZY9ZNMKJWJ0VW7.webp"}',
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2025-05-01 11:09:49',
             ),
@@ -207,7 +207,7 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 24,
                 'key' => 'our_vision_second_image',
-                'value' => '{"fr":"01JT5RKP8WZVR2YZKRJT2M3E44.jpg","ar":"i2.jpg","en":"i2.jpg"}',
+                'value' => '{"fr":"01JT5RKP8WZVR2YZKRJT2M3E44.jpg"}',
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2025-05-01 11:09:49',
             ),
@@ -215,7 +215,7 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 25,
                 'key' => 'our_vision_third_image',
-                'value' => '{"fr":"01JT5RKP97HSMAQGYZW0TF99QE.webp","ar":"i3.jpg","en":"i3.jpg"}',
+                'value' => '{"fr":"01JT5RKP97HSMAQGYZW0TF99QE.webp"}',
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2025-05-01 11:09:49',
             ),
@@ -239,7 +239,7 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 28,
                 'key' => 'our_mission_primary_image',
-                'value' => '{"fr":"01JT5T5E48B13FTZ8PZ50AW3ZJ.jpg","ar":"i5.jpg","en":"i5.jpg"}',
+                'value' => '{"fr":"01JT5T5E48B13FTZ8PZ50AW3ZJ.jpg"}',
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2025-05-01 11:36:59',
             ),
@@ -247,7 +247,7 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 29,
                 'key' => 'our_mission_second_image',
-                'value' => '{"fr":"01JT5T5E4E0W0XGYXJC9RVTTX3.jpg","ar":"i6.jpg","en":"i6.jpg"}',
+                'value' => '{"fr":"01JT5T5E4E0W0XGYXJC9RVTTX3.jpg"}',
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2025-05-01 11:36:59',
             ),
@@ -263,7 +263,7 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 31,
                 'key' => 'about_header_image',
-                'value' => '{"fr":"IMG-20250107-WA0198.jpg","ar":"IMG-20250107-WA0198.jpg","en":"IMG-20250107-WA0198.jpg"}',
+                'value' => '{"fr":"IMG-20250107-WA0198.jpg"}',
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-04-27 17:37:57',
             ),
@@ -271,7 +271,7 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 32,
                 'key' => 'our_vision_header_image',
-                'value' => '{"fr":"01JT5QMZMWH38QZPWK5C0QQJF3.jpg","ar":"i8.jpg","en":"i8.jpg"}',
+                'value' => '{"fr":"01JT5QMZMWH38QZPWK5C0QQJF3.jpg"}',
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-05-01 10:53:03',
             ),
@@ -287,7 +287,7 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 34,
                 'key' => 'our_mission_header_image',
-                'value' => '{"fr":"01JT5T5E40FD16W0E49TCMBX8B.jpg","ar":"i8.jpg","en":"i8.jpg"}',
+                'value' => '{"fr":"01JT5T5E40FD16W0E49TCMBX8B.jpg"}',
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-05-01 11:36:59',
             ),
@@ -319,9 +319,9 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 38,
                 'key' => 'faq_header_image',
-                'value' => '{"fr":"i8.jpg","ar":"i8.jpg","en":"i8.jpg"}',
+                'value' => '{"fr":"01JVH4ZWY1GZRHZJCQ1K9KGR32.jpg"}',
                 'created_at' => '2024-12-08 09:05:31',
-                'updated_at' => '2025-04-27 17:37:57',
+                'updated_at' => '2025-05-18 07:33:32',
             ),
             38 =>
             array (
@@ -343,9 +343,9 @@ class LandingSettingsTableSeeder extends Seeder
             array (
                 'id' => 41,
                 'key' => 'contact_header_image',
-                'value' => '{"fr":"i8.jpg","ar":"i8.jpg","en":"i8.jpg"}',
+                'value' => '{"fr":"01JVH538CSN7MSA27H2S0J6P00.jpg"}',
                 'created_at' => '2024-12-08 09:05:31',
-                'updated_at' => '2025-04-27 17:37:57',
+                'updated_at' => '2025-05-18 07:35:22',
             ),
             41 =>
             array (
