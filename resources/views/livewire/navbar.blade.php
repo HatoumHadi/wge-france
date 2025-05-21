@@ -5,7 +5,7 @@
                 <div class="px-4 logo sm:w-[23rem] fixed-logo">
                     <a href="{{ route('home') }}"
                        class="navbar-logo block w-full py-2">
-                        <img src="{{ asset($logo) }}" alt="logo"
+                        <img src="{{ asset($logo) }}" alt="wge-france"
                              class="header-logo w-full fixed-image" style="width: 100px; height: auto;"/>
                     </a>
                 </div>

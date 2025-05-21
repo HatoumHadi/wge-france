@@ -2,11 +2,13 @@
 
 namespace App\Livewire;
 
+use App\Mail\ContactEmail;
 use App\Models\ContactUs;
 use App\Models\LandingSetting;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 use Livewire\Component;
 use Livewire\Attributes\Validate;
@@ -99,9 +101,11 @@ class ContactUsSection extends Component
             return;
         }
 
-        ContactUs::create(
+        $data = ContactUs::create(
             $this->only(['name', 'email', 'telephone', 'message'])
         );
+
+        Mail::to($this->contact_email_content)->send(new ContactEmail($data));
 
         $this->reset();
         $this->dispatch('successConnect');
