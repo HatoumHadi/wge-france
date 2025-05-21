@@ -196,7 +196,8 @@
                         // Add buttons
                         const downloadButton = document.createElement("a");
                         downloadButton.innerHTML = '<i class="fas fa-download"></i>'; // FontAwesome download icon
-                        downloadButton.href = target.src;
+                        downloadButton.href = target.src.startsWith('http') ? target.src : window.location.origin + target.src;
+                        downloadButton.setAttribute('download', '');
                         downloadButton.classList.add("fullscreen-download");
 
                         const cancelButton = document.createElement("button");

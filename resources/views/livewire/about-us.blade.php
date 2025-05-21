@@ -91,11 +91,11 @@
             loop: true,
             breakpoints: {
                 640: {
-                    slidesPerView: 1, // 1 slide per view on screens smaller than 640px
+                    slidesPerView: 1,
                     spaceBetween: 20,
                 },
                 1024: {
-                    slidesPerView: 3, // 3 slides per view on larger screens
+                    slidesPerView: 3,
                     spaceBetween: 40,
                 }
             }
@@ -103,65 +103,101 @@
 
         // Fullscreen functionality
         let currentIndex = 0;
+        let currentOverlay = null;
         const images = Array.from(document.querySelectorAll(".gallery-image"));
 
         document.addEventListener("click", function (event) {
             const target = event.target;
             if (target.classList.contains("gallery-image")) {
-                currentIndex = images.indexOf(target);
-
-                // Create fullscreen overlay
-                const overlay = document.createElement("div");
-                overlay.classList.add("fullscreen-overlay");
-
-                // Create fullscreen image
-                const clonedImage = target.cloneNode(true);
-                clonedImage.classList.add("fullscreen-image");
-
-                // Add buttons
-                const downloadButton = document.createElement("a");
-                downloadButton.innerHTML = '<i class="fas fa-download"></i>'; // FontAwesome download icon
-                downloadButton.href = target.src;
-                downloadButton.classList.add("fullscreen-download");
-
-                const cancelButton = document.createElement("button");
-                cancelButton.innerText = "×";
-                cancelButton.classList.add("fullscreen-cancel");
-
-                const leftButton = document.createElement("button");
-                leftButton.innerText = "←";
-                leftButton.classList.add("fullscreen-left");
-
-                const rightButton = document.createElement("button");
-                rightButton.innerText = "→";
-                rightButton.classList.add("fullscreen-right");
-
-                // Append elements
-                overlay.append(downloadButton, cancelButton, clonedImage, leftButton, rightButton);
-                document.body.appendChild(overlay);
-
-                // Event listeners
-                cancelButton.addEventListener("click", () => document.body.removeChild(overlay));
-
-                leftButton.addEventListener("click", () => navigateFullscreen(-1, overlay));
-                rightButton.addEventListener("click", () => navigateFullscreen(1, overlay));
+                openFullscreen(target);
             }
         });
 
-        function navigateFullscreen(direction, overlay) {
-            currentIndex = (currentIndex + direction + images.length) % images.length;
+        function openFullscreen(target) {
+            currentIndex = images.indexOf(target);
 
-            // Get the new image source and replace the old image in the overlay
+            // Create fullscreen overlay
+            const overlay = document.createElement("div");
+            overlay.classList.add("fullscreen-overlay");
+            currentOverlay = overlay;
+
+            // Create fullscreen image
+            const clonedImage = target.cloneNode(true);
+            clonedImage.classList.add("fullscreen-image");
+
+            // Add buttons
+            const downloadButton = document.createElement("a");
+            downloadButton.innerHTML = '<i class="fas fa-download"></i>';
+            downloadButton.href = target.src.startsWith('http') ? target.src : window.location.origin + target.src;
+            downloadButton.setAttribute('download', '');
+            downloadButton.classList.add("fullscreen-download");
+
+            const cancelButton = document.createElement("button");
+            cancelButton.innerText = "×";
+            cancelButton.classList.add("fullscreen-cancel");
+
+            const leftButton = document.createElement("button");
+            leftButton.innerText = "←";
+            leftButton.classList.add("fullscreen-left");
+
+            const rightButton = document.createElement("button");
+            rightButton.innerText = "→";
+            rightButton.classList.add("fullscreen-right");
+
+            // Append elements
+            overlay.append(downloadButton, cancelButton, clonedImage, leftButton, rightButton);
+            document.body.appendChild(overlay);
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when overlay is open
+
+            // Event listeners
+            cancelButton.addEventListener("click", closeFullscreen);
+            leftButton.addEventListener("click", () => navigateFullscreen(-1));
+            rightButton.addEventListener("click", () => navigateFullscreen(1));
+
+            // Add keyboard event listeners
+            document.addEventListener('keydown', handleKeyDown);
+        }
+
+        function closeFullscreen() {
+            if (currentOverlay) {
+                document.body.removeChild(currentOverlay);
+                document.body.style.overflow = ''; // Re-enable scrolling
+                currentOverlay = null;
+
+                // Remove keyboard event listener
+                document.removeEventListener('keydown', handleKeyDown);
+            }
+        }
+
+        function navigateFullscreen(direction) {
+            if (!currentOverlay) return;
+
+            currentIndex = (currentIndex + direction + images.length) % images.length;
             const newImage = images[currentIndex];
             const newImageSrc = newImage.src;
 
             // Update the image in the fullscreen overlay
-            const newImageElement = document.createElement("img");
-            newImageElement.src = newImageSrc;
-            newImageElement.classList.add("fullscreen-image");
+            const imgElement = currentOverlay.querySelector(".fullscreen-image");
+            imgElement.src = newImageSrc;
 
-            overlay.querySelector(".fullscreen-image").replaceWith(newImageElement);
-            overlay.querySelector(".fullscreen-download").href = newImageSrc;
+            // Update download link
+            currentOverlay.querySelector(".fullscreen-download").href = newImageSrc;
+        }
+
+        function handleKeyDown(event) {
+            if (!currentOverlay) return;
+
+            switch(event.key) {
+                case 'Escape':
+                    closeFullscreen();
+                    break;
+                case 'ArrowLeft':
+                    navigateFullscreen(-1);
+                    break;
+                case 'ArrowRight':
+                    navigateFullscreen(1);
+                    break;
+            }
         }
     </script>
 </div>
