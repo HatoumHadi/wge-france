@@ -3,6 +3,7 @@
 namespace App\Filament\Widgets;
 
 use App\Models\Category;
+use App\Models\ContactUs;
 use App\Models\Product;
 use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
@@ -14,6 +15,7 @@ class StatsOverview extends BaseWidget
         return [
             Stat::make(__('trans.total_products'), Product::count()),
             Stat::make(__('trans.total_categories'), Category::count()),
+            Stat::make(__('trans.total_contacts'), ContactUs::count()),
         ];
     }
 }

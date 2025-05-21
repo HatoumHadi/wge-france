@@ -606,6 +606,11 @@ class LanguageLineSeeder extends Seeder
                 'ar' => 'بريدك الإلكتروني',
                 'fr' => 'Votre e-mail',
             ],
+            'Total Contacts' => [
+                'en' => 'Total Contacts',
+                'ar' => 'إجمالي جهات الاتصال',
+                'fr' => 'Nombre total de contacts',
+            ],
         ];
 
         foreach ($lines as $english => $translations) {
