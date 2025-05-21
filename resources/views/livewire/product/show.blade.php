@@ -28,10 +28,12 @@
                         <div class="swiper_2 mySwiper_2">
                             <div class="swiper-wrapper">
                                 @foreach(json_decode($product->images, true) as $index => $image)
-                                    <div class="swiper-slide overflow-hidden flex items-center justify-center bg-gray-100 rounded-xl shadow-md">
+                                    <div
+                                        class="swiper-slide overflow-hidden flex items-center justify-center bg-gray-100 rounded-xl shadow-md">
                                         <img src="{{ asset('storage/' . $image) }}"
                                              alt="{{ $product->name }}"
-                                             class="w-full h-full object-cover gallery-image cursor-pointer transition-transform duration-300 hover:scale-105" loading="lazy">
+                                             class="w-full h-full object-fill gallery-image cursor-pointer transition-transform duration-300 hover:scale-105"
+                                             loading="lazy">
                                     </div>
                                 @endforeach
                             </div>
@@ -118,7 +120,9 @@
                                 <td class="text-gray-700 py-2 px-4">{{ $product->manufacture_year }}</td>
                             </tr>
                             <tr class="border-b text-center">
-                                <td class="font-bold text-gray-800 py-2 px-4">{{__('trans.product_price')}} ({{$currency}})</td>
+                                <td class="font-bold text-gray-800 py-2 px-4">{{__('trans.product_price')}}
+                                    ({{$currency}})
+                                </td>
                                 <td class="font-bold text-gray-700 py-2 px-4">{{ $product->price }}</td>
                             </tr>
                             </tbody>
@@ -214,7 +218,7 @@
                         // Event listeners
                         cancelButton.addEventListener("click", () => document.body.removeChild(overlay));
 
-                        document.addEventListener("keydown", function(event) {
+                        document.addEventListener("keydown", function (event) {
                             if (event.key === "Escape") {
                                 document.body.removeChild(overlay)
                             }
@@ -296,6 +300,7 @@
                 }
             </style>
         </div>
+    </div>
 </section>
 
 
