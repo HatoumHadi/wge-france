@@ -611,6 +611,31 @@ class LanguageLineSeeder extends Seeder
                 'ar' => 'إجمالي جهات الاتصال',
                 'fr' => 'Nombre total de contacts',
             ],
+            'Instagram link' => [
+                'en' => 'Instagram link',
+                'ar' => 'رابط الانستجرام',
+                'fr' => 'Lien Instagram',
+            ],
+            'Facebook link' => [
+                'en' => 'Facebook link',
+                'ar' => 'رابط الفيسبوك',
+                'fr' => 'Lien Facebook',
+            ],
+            'x link' => [
+                'en' => 'x link',
+                'ar' => 'رابط x',
+                'fr' => 'lien x',
+            ],
+            'LinkedIn link' => [
+                'en' => 'LinkedIn link',
+                'ar' => 'رابط لينكدإن',
+                'fr' => 'Lien LinkedIn',
+            ],
+            'Social Media' => [
+                'en' => 'Social Media',
+                'ar' => 'وسائل التواصل الاجتماعي',
+                'fr' => 'Réseaux sociaux',
+            ],
         ];
 
         foreach ($lines as $english => $translations) {

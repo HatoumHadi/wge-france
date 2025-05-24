@@ -63,13 +63,36 @@ class Configuration extends Page
     public function form(Form $form): Form
     {
         return $form->schema([
-            Section::make('General')->schema([
+            Section::make(__('trans.general'))->schema([
                 Select::make('currency')
                     ->options($this->currencyMapping)
                     ->label(__('trans.currency'))
                     ->required(),
-            ])->label(__('trans.general'))
-                ->columns(2),
+            ]),
+
+            Section::make(__('trans.social_media'))
+                ->schema([
+                    TextInput::make('instagram_link')
+                        ->label(__('trans.instagram_link'))
+                        ->placeholder('https://instagram.com/your_profile')
+                        ->columnSpan(2),
+
+                    TextInput::make('facebook_link')
+                        ->label(__('trans.facebook_link'))
+                        ->placeholder('https://facebook.com/your_profile')
+                        ->columnSpan(2),
+
+                    TextInput::make('x_link')
+                        ->label(__('trans.x_link'))
+                        ->placeholder('https://x.com/your_profile')
+                        ->columnSpan(2),
+
+                    TextInput::make('linkedIn_link')
+                        ->label(__('trans.linked_in_link'))
+                        ->placeholder('https://linkedin.com/your_profile')
+                        ->columnSpan(2),
+                ]),
+
         ])->statePath('data');
     }
 
@@ -79,12 +102,13 @@ class Configuration extends Page
         $data = $this->form->getState();
 
         foreach ($data as $key => $value) {
-            $code = $this->currencyMapping[$value];
+            $updateData = ['value' => $value];
 
-            Setting::updateOrCreate(
-                ['key' => $key],
-                ['name' => $code, 'value' => $value]
-            );
+            if ($key === 'currency' && isset($this->currencyMapping[$value])) {
+                $updateData['name'] = $this->currencyMapping[$value];
+            }
+
+            Setting::updateOrCreate(['key' => $key], $updateData);
         }
 
         Notification::make()
