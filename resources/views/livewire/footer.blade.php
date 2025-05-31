@@ -1,5 +1,5 @@
 <div>
-    <footer class="shadow-lg shadow-gray-500 relative bg-gray-100 pt-20 lg:pt-[100px]" data-wow-delay=".15s">
+    <footer class="shadow-lg shadow-gray-500 relative bg-black pt-20 lg:pt-[100px]" data-wow-delay=".15s">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full justify-center px-4 sm:w-1/2">
@@ -10,21 +10,21 @@
                         </a>
 
                         <div class="-mx-3 flex items-center mt-6">
-                            <a href="{{$facebook}}" target="_blank" rel="noopener noreferrer" class="px-3 text-primary hover:text-secondary focus:outline-none">
+                            <a href="{{$facebook}}" target="_blank" rel="noopener noreferrer" class="px-3 text-white hover:text-secondary focus:outline-none">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                      xmlns="http://www.w3.org/2000/svg" class="fill-current">
                                     <path
                                         d="M16.294 8.86875H14.369H13.6815V8.18125V6.05V5.3625H14.369H15.8128C16.1909 5.3625 16.5003 5.0875 16.5003 4.675V1.03125C16.5003 0.653125 16.2253 0.34375 15.8128 0.34375H13.3034C10.5878 0.34375 8.69714 2.26875 8.69714 5.12187V8.1125V8.8H8.00964H5.67214C5.19089 8.8 4.74402 9.17812 4.74402 9.72812V12.2031C4.74402 12.6844 5.12214 13.1313 5.67214 13.1313H7.94089H8.62839V13.8188V20.7281C8.62839 21.2094 9.00652 21.6562 9.55652 21.6562H12.7878C12.994 21.6562 13.1659 21.5531 13.3034 21.4156C13.4409 21.2781 13.544 21.0375 13.544 20.8312V13.8531V13.1656H14.2659H15.8128C16.2596 13.1656 16.6034 12.8906 16.6721 12.4781V12.4438V12.4094L17.1534 10.0375C17.1878 9.79688 17.1534 9.52187 16.9471 9.24687C16.8784 9.075 16.569 8.90312 16.294 8.86875Z"/>
                                 </svg>
                             </a>
-                            <a href="{{$x}}" target="_blank" rel="noopener noreferrer" class="px-3 text-primary hover:text-secondary focus:outline-none">
+                            <a href="{{$x}}" target="_blank" rel="noopener noreferrer" class="px-3 text-white hover:text-secondary focus:outline-none">
                                 <svg width="22" height="22" class="fill-current" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 512 512">
                                     <path
                                         d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
                                 </svg>
                             </a>
-                            <a href="{{$instagram}}" target="_blank" rel="noopener noreferrer" class="px-3 text-primary hover:text-secondary focus:outline-none">
+                            <a href="{{$instagram}}" target="_blank" rel="noopener noreferrer" class="px-3 text-white hover:text-secondary focus:outline-none">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                      xmlns="http://www.w3.org/2000/svg" class="fill-current">
                                     <path
@@ -35,7 +35,7 @@
                                         d="M16.0276 4.96777C15.6432 4.96777 15.318 5.29304 15.318 5.67745C15.318 6.06186 15.6432 6.38713 16.0276 6.38713C16.412 6.38713 16.7373 6.06186 16.7373 5.67745C16.7373 5.29304 16.4416 4.96777 16.0276 4.96777Z"/>
                                 </svg>
                             </a>
-                            <a href="{{$linkedIn}}" target="_blank" rel="noopener noreferrer" class="px-3 text-primary hover:text-secondary focus:outline-none">
+                            <a href="{{$linkedIn}}" target="_blank" rel="noopener noreferrer" class="px-3 text-white hover:text-secondary focus:outline-none">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                      xmlns="http://www.w3.org/2000/svg" class="fill-current">
                                     <path
@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="w-full justify-center px-4 sm:w-1/2">
-                    <div class="font-bold text-xl">
+                    <div class="text-white font-bold text-xl">
                         <p>{{__('trans.about')}}</p>
                     </div>
                     <div class="mt-8 mb-10 w-full">
@@ -54,20 +54,20 @@
                             <ul>
                                 <li>
                                     <a href="{{ route('home') }}"
-                                       class="mb-3 inline-block text-base text-black hover:text-primary focus:outline-none">
+                                       class="mb-3 inline-block text-base text-white hover:text-primary focus:outline-none">
                                         {{ __('trans.home') }}
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="{{ route('our-mission') }}"
-                                       class="mb-3 inline-block text-base text-black hover:text-primary focus:outline-none">
+                                       class="mb-3 inline-block text-base text-white hover:text-primary focus:outline-none">
                                         {{ __('trans.our_mission') }}
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{ route('our-vision') }}"
-                                       class="mb-3 inline-block text-base text-black hover:text-primary focus:outline-none">
+                                       class="mb-3 inline-block text-base text-white hover:text-primary focus:outline-none">
                                         {{ __('trans.our_vision') }}
                                     </a>
                                 </li>
@@ -75,14 +75,14 @@
                             <ul class="ml-auto">
                                 <li>
                                     <a href="{{ route('faq') }}"
-                                       class="mb-3 inline-block text-base text-black hover:text-primary focus:outline-none">
+                                       class="mb-3 inline-block text-base text-white hover:text-primary focus:outline-none">
                                         {{ __('trans.faq') }}
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="{{ route('contact-us') }}"
-                                       class="mb-3 inline-block text-base text-black hover:text-primary focus:outline-none">
+                                       class="mb-3 inline-block text-base text-white hover:text-primary focus:outline-none">
                                         {{ __('trans.contact_us') }}
                                     </a>
                                 </li>
@@ -110,13 +110,8 @@
                     </div>
                     <div class="w-full px-4 md:w-2/3 lg:w-1/2">
                         <div class="my-1 flex items-center justify-center md:justify-end">
-                            <p class="text-start text-primary">
+                            <p class="text-start text-white">
                                 © {{__('trans.year_of_establishment')}} {{ __('trans.all_rights_reserved') }}
-
-                                <a href="" rel="nofollow noopner"
-                                   class="text-primary hover:underline focus:outline-none">
-                                    {{__('trans.printing_machine')}}
-                                </a>
                             </p>
                         </div>
                     </div>

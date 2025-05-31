@@ -81,9 +81,9 @@ class LanguageLineSeeder extends Seeder
                 'fr' => '2025',
             ],
             'All Rights Reserved' => [
-                'en' => 'All Rights Reserved',
-                'ar' => 'جميع الحقوق محفوظة',
-                'fr' => 'Tous droits réservés',
+                'en' => 'WGE France. All rights reserved.',
+                'ar' => 'جميع الحقوق محفوظة لشركة WGE فرنسا.',
+                'fr' => 'WGE France. Tous droits réservés.',
             ],
             'privacy policy' => [
                 'en' => 'Privacy Policy',
