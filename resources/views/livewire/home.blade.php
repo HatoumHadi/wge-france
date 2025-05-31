@@ -41,19 +41,31 @@
                     </div>
                     <div class="flex flex-wrap justify-between">
                         @foreach ([
-                            ['title' => $section_one_title, 'description' => $section_one_description, 'icon' => $section_one_icon],
-                            ['title' => $section_two_title, 'description' => $section_two_description, 'icon' => $section_two_icon],
-                            ['title' => $section_three_title, 'description' => $section_three_description, 'icon' => $section_three_icon],
-                            ['title' => $section_four_title, 'description' => $section_four_description, 'icon' => $section_four_icon],
+                            ['title' => $section_one_title, 'description' => $section_one_description, 'icon' => 'heroicon-s-shield-check'],
+                            ['title' => $section_two_title, 'description' => $section_two_description, 'icon' => 'heroicon-s-briefcase'],  {{-- Updated icon here --}}
+                            ['title' => $section_three_title, 'description' => $section_three_description, 'icon' => 'heroicon-s-cog'],
+                            ['title' => $section_four_title, 'description' => $section_four_description, 'icon' => 'heroicon-s-globe-alt'],
                         ] as $section)
                             @if(!empty($section['title']))
                                 <div class="w-full h-full lg:w-1/4 text-start mb-4">
                                     <div class="flex flex-col items-center py-8">
                                         <div class="flex flex-col items-center justify-center sm:mr-5">
                                             <div
-                                                class="px-4 flex items-center justify-center h-20 w-20 rounded-full bg-primary text-white border-4 border-white text-xl font-semibold">
-                                                <x-dynamic-component :component="$section['icon']"
-                                                                     class="h-[50px] w-[50px] text-white"/>
+                                                class="px-4 flex items-center justify-center h-20 w-20 rounded-full bg-primary text-white border-4 border-black text-xl font-semibold">
+                                                @switch($section['icon'])
+                                                    @case('heroicon-s-shield-check')
+                                                        <x-heroicon-s-shield-check class="h-[50px] w-[50px] text-white" />
+                                                        @break
+                                                    @case('heroicon-s-briefcase')
+                                                        <x-heroicon-s-briefcase class="h-[50px] w-[50px] text-white" />
+                                                        @break
+                                                    @case('heroicon-s-cog')
+                                                        <x-heroicon-s-cog class="h-[50px] w-[50px] text-white" />
+                                                        @break
+                                                    @case('heroicon-s-globe-alt')
+                                                        <x-heroicon-s-globe-alt class="h-[50px] w-[50px] text-white" />
+                                                        @break
+                                                @endswitch
                                             </div>
                                         </div>
                                         <div class="p-5 pb-10">
@@ -69,6 +81,7 @@
                             @endif
                         @endforeach
                     </div>
+
                 </div>
             </section>
 

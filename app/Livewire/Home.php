@@ -13,16 +13,12 @@ class Home extends Component
     public $title;
     public $section_one_title;
     public $section_one_description;
-    public $section_one_icon;
     public $section_two_title;
     public $section_two_description;
-    public $section_two_icon;
     public $section_three_title;
     public $section_three_description;
-    public $section_three_icon;
     public $section_four_title;
     public $section_four_description;
-    public $section_four_icon;
 
     public $images;
 
@@ -42,19 +38,15 @@ class Home extends Component
 
             'home_section_one_title_one',
             'home_section_one_description_one',
-            'home_section_one_icon_one',
 
             'home_section_one_title_two',
             'home_section_one_description_two',
-            'home_section_one_icon_two',
 
             'home_section_one_title_three',
             'home_section_one_description_three',
-            'home_section_one_icon_three',
 
             'home_section_one_title_four',
             'home_section_one_description_four',
-            'home_section_one_icon_four',
 
             'about_secondary_title',
             'about_description',
@@ -68,19 +60,15 @@ class Home extends Component
 
         $this->section_one_title = $settings['home_section_one_title_one'];
         $this->section_one_description = $settings['home_section_one_description_one'];
-        $this->section_one_icon = $settings['home_section_one_icon_one'];
 
         $this->section_two_title = $settings['home_section_one_title_two'];
         $this->section_two_description = $settings['home_section_one_description_two'];
-        $this->section_two_icon = $settings['home_section_one_icon_two'];
 
         $this->section_three_title = $settings['home_section_one_title_three'];
         $this->section_three_description = $settings['home_section_one_description_three'];
-        $this->section_three_icon = $settings['home_section_one_icon_three'];
 
         $this->section_four_title = $settings['home_section_one_title_four'];
         $this->section_four_description = $settings['home_section_one_description_four'];
-        $this->section_four_icon = $settings['home_section_one_icon_four'];
 
         $this->images = json_decode($settings['header_images']);
 

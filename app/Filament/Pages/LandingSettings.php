@@ -16,7 +16,6 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Notifications\Notification;
 use Filament\Pages\Page;
-use Guava\FilamentIconPicker\Forms\IconPicker;
 use Filament\Resources\Concerns\Translatable;
 
 class LandingSettings extends Page
@@ -125,41 +124,36 @@ class LandingSettings extends Page
                                     ->required(),
                                 TextInput::make('home_section_one_title_one')
                                     ->label(__('trans.title_one'))
+                                    ->columnSpanFull()
                                     ->required(),
                                 Textarea::make('home_section_one_description_one')
                                     ->label(__('trans.description_one'))
-                                    ->required(),
-                                IconPicker::make(name: 'home_section_one_icon_one')
-                                    ->columnspan(2)
-                                    ->preload()
+                                    ->columnSpanFull()
                                     ->required(),
                                 TextInput::make('home_section_one_title_two')
                                     ->label(__('trans.title_two'))
+                                    ->columnSpanFull()
                                     ->required(),
                                 Textarea::make('home_section_one_description_two')
                                     ->label(__('trans.description_two'))
-                                    ->required(),
-                                IconPicker::make(name: 'home_section_one_icon_two')
-                                    ->columnspan(2)
-                                    ->preload()
+                                    ->columnSpanFull()
                                     ->required(),
                                 TextInput::make('home_section_one_title_three')
                                     ->label(__('trans.title_three'))
+                                    ->columnSpanFull()
                                     ->required(),
                                 Textarea::make('home_section_one_description_three')
                                     ->label(__('trans.description_three'))
-                                    ->required(),
-                                IconPicker::make(name: 'home_section_one_icon_three')
-                                    ->columnspan(2)
-                                    ->preload()
+                                    ->columnSpanFull()
                                     ->required(),
                                 TextInput::make('home_section_one_title_four')
+                                    ->columnSpanFull()
+                                    ->required()
                                     ->label(__('trans.title_four')),
                                 Textarea::make('home_section_one_description_four')
+                                    ->columnSpanFull()
+                                    ->required()
                                     ->label(__('trans.description_four')),
-                                IconPicker::make(name: 'home_section_one_icon_four')
-                                    ->columnspan(2)
-                                    ->preload(),
                             ])->columns(2),
                         ])->label(__('trans.home')),
 
