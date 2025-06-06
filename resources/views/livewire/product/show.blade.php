@@ -25,31 +25,54 @@
                 <div class="p-2 sm:p-12 flex flex-col sm:flex-row justify-center w-full">
                     <div class="bg-white shadow-lg overflow-hidden sm:w-1/2 w-full">
 
+                        @php
+                            $images = !empty($product->images) ? json_decode($product->images, true) : [];
+                        @endphp
+
                         <div class="swiper_2 mySwiper_2">
                             <div class="swiper-wrapper">
-                                @foreach(json_decode($product->images, true) as $index => $image)
-                                    <div
-                                        class="swiper-slide overflow-hidden flex items-center justify-center bg-gray-100 rounded-xl shadow-md">
-                                        <img src="{{ asset('storage/' . $image) }}"
-                                             alt="{{ $product->name }}"
+                                @if(is_array($images) && count($images) > 0)
+                                    @foreach($images as $index => $image)
+                                        <div class="swiper-slide overflow-hidden flex items-center justify-center bg-gray-100 rounded-xl shadow-md">
+                                            <img src="{{ asset('storage/' . $image) }}"
+                                                 alt="{{ $product->name }}"
+                                                 class="w-full h-full object-fill gallery-image cursor-pointer transition-transform duration-300 hover:scale-105"
+                                                 loading="lazy">
+                                        </div>
+                                    @endforeach
+                                @else
+                                    <div class="swiper-slide overflow-hidden flex items-center justify-center bg-gray-100 rounded-xl shadow-md">
+                                        <img src="{{ asset('products/default-product.jpg') }}"
+                                             alt="Default Image"
                                              class="w-full h-full object-fill gallery-image cursor-pointer transition-transform duration-300 hover:scale-105"
                                              loading="lazy">
                                     </div>
-                                @endforeach
+                                @endif
                             </div>
                             <div class="swiper-button-prev custom-swiper-button-prev"></div>
                             <div class="swiper-button-next custom-swiper-button-next"></div>
                         </div>
+
+                        @php
+                            $images = !empty($product->images) ? json_decode($product->images, true) : [];
+                        @endphp
+
                         <div thumbsSlider="" class="swiper mySwiper swiper-wrapper-height-gallery m-2">
                             <div class="swiper-wrapper">
-                                @foreach(json_decode($product->images, true) as $index => $image)
+                                @if(is_array($images) && count($images) > 0)
+                                    @foreach($images as $index => $image)
+                                        <div class="swiper-slide cursor-pointer">
+                                            <img src="{{ asset('storage/' . $image) }}" alt="{{ $product->name }}">
+                                        </div>
+                                    @endforeach
+                                @else
                                     <div class="swiper-slide cursor-pointer">
-                                        <img src="{{ asset('storage/' . $image) }}" alt="{{ $product->name }}"
-                                             class="">
+                                        <img src="{{ asset('products/default-product.jpg') }}" alt="Default Image">
                                     </div>
-                                @endforeach
+                                @endif
                             </div>
                         </div>
+
 
                     </div>
                     <div class="sm:w-1/2 w-full {{ app()->getLocale() == 'ar' ? 'mr-4' : 'ml-4' }} mt-8">
@@ -142,6 +165,7 @@
                         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                             @foreach($relatedProducts as $relatedProduct)
                                 <x-product-card :product="$relatedProduct"
+                                                :currency="$currency"
                                                 :key="'related-product-'.$relatedProduct->id"/>
                             @endforeach
                         </div>

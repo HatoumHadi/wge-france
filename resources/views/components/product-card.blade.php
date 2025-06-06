@@ -4,14 +4,26 @@
         <!-- Swiper Section -->
         <div class="swiper_2 mySwiper_2">
             <div class="swiper-wrapper">
-                @foreach(json_decode($product->images, true) as $index => $image)
+                @php
+                    $images = !empty($product->images) ? json_decode($product->images, true) : [];
+                @endphp
+
+                @if(is_array($images) && count($images) > 0)
+                    @foreach($images as $index => $image)
+                        <div class="swiper-slide">
+                            <img src="{{ asset('storage/' . $image) }}" alt="{{ $product->name }}"
+                                 class="w-full max-h-[200px] h-[50vh] object-cover">
+                        </div>
+                    @endforeach
+                @else
                     <div class="swiper-slide">
-                        <img src="{{ asset('storage/' . $image) }}" alt="{{ $product->name }}"
+                        <img src="{{ asset('products/default-product.jpg') }}" alt="Default Image"
                              class="w-full max-h-[200px] h-[50vh] object-cover">
                     </div>
-                @endforeach
+                @endif
             </div>
         </div>
+
 
         <!-- Product Details -->
         <div wire:click="showProduct('{{ $product->slug }}')"
