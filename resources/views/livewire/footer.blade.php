@@ -9,8 +9,7 @@
                                class="inline-block max-w-[160px] focus:outline-none">
                                 <img src="{{ asset($logo) }}" alt="logo" class="max-w-full"/>
                             </a>
-                            <p class="text-gray-400 mt-8">Your trusted partner for industrial printing equipment solutions
-                                in France and Europe.</p>
+                            <p class="text-gray-400 mt-8">{{__('trans.footer_text')}}</p>
                         </div>
 
                         <div class="flex items-center mt-6">
@@ -58,7 +57,7 @@
                 </div>
                 <div class="w-full justify-center px-4 sm:w-1/4">
                     <div class="text-white font-bold text-xl">
-                        <p>Quick Links</p>
+                        <p>{{__('trans.quick_links')}}</p>
                     </div>
                     <div class="mt-10 mb-10 w-full">
                         <div>
@@ -96,32 +95,32 @@
                 </div>
                 <div class="w-full justify-center px-4 sm:w-1/4">
                     <div class="text-white font-bold text-xl">
-                        <p>Services</p>
+                        <p>{{__('trans.services')}}</p>
                     </div>
                     <div class="mt-10 mb-10 w-full">
                         <div>
                             <ul>
                                 <li class="mt-2">
                                     <p class="mb-3 inline-block text-base text-gray-400  focus:outline-none">
-                                        Equipment Sales
+                                        {{__('trans.equipment_sales')}}
                                     </p>
                                 </li>
 
                                 <li class="mt-2">
                                     <p class="mb-3 inline-block text-base text-gray-400  focus:outline-none">
-                                        Equipment Purchase
+                                        {{__('trans.equipment_purchase')}}
                                     </p>
                                 </li>
 
                                 <li class="mt-2">
                                     <p class="mb-3 inline-block text-base text-gray-400  focus:outline-none">
-                                        Technical Support
+                                        {{__('trans.technical_support')}}
                                     </p>
                                 </li>
 
                                 <li class="mt-2">
                                     <p class="mb-3 inline-block text-base text-gray-400  focus:outline-none">
-                                        Maintenance
+                                        {{__('trans.maintenance')}}
                                     </p>
                                 </li>
                             </ul>
@@ -130,7 +129,7 @@
                 </div>
                 <div class="w-full justify-center px-4 sm:w-1/4">
                     <div class="text-white font-bold text-xl">
-                        <p>Contact Info</p>
+                        <p>{{__('trans.contact_info')}}</p>
                     </div>
                     <div class="mt-10 mb-10 w-full">
                         <div>

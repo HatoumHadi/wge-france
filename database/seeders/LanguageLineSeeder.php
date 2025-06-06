@@ -636,6 +636,46 @@ class LanguageLineSeeder extends Seeder
                 'ar' => 'وسائل التواصل الاجتماعي',
                 'fr' => 'Réseaux sociaux',
             ],
+            'Footer text' => [
+                'en' => 'Your trusted partner for industrial printing equipment solutions in France and Europe.',
+                'ar' => 'شريكك الموثوق به لحلول معدات الطباعة الصناعية في فرنسا وأوروبا.',
+                'fr' => 'Votre partenaire de confiance pour les solutions d`équipements d`impression industrielle en France et en Europe.',
+            ],
+            'Quick Links' => [
+                'en' => 'Quick Links',
+                'ar' => 'روابط سريعة',
+                'fr' => 'Liens rapides',
+            ],
+            'Services' => [
+                'en' => 'Services',
+                'ar' => 'خدمات',
+                'fr' => 'Services',
+            ],
+            'Contact Info' => [
+                'en' => 'Contact Info',
+                'ar' => 'معلومات الاتصال',
+                'fr' => 'Coordonnées',
+            ],
+            'Equipment Sales' => [
+                'en' => 'Equipment Sales',
+                'ar' => 'مبيعات المعدات',
+                'fr' => 'Vente d`équipements',
+            ],
+            'Equipment Purchase' => [
+                'en' => 'Equipment Purchase',
+                'ar' => 'شراء المعدات',
+                'fr' => 'Achat d`équipement',
+            ],
+            'Technical Support' => [
+                'en' => 'Technical Support',
+                'ar' => 'الدعم الفني',
+                'fr' => 'Support technique',
+            ],
+            'Maintenance' => [
+                'en' => 'Maintenance',
+                'ar' => 'صيانة',
+                'fr' => 'Entretien',
+            ],
         ];
 
         foreach ($lines as $english => $translations) {
