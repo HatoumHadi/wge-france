@@ -279,6 +279,32 @@ class ProductsTableSeeder extends Seeder
                     'created_at' => '2025-06-07 13:25:00',
                     'updated_at' => '2025-06-06 22:19:25',
                 ),
+            10 =>
+                array(
+                    'id' => 12,
+                    'name' => '{"fr": "OFEM", "ar": "أوفيم", "en": "OFEM"}',
+                    'description' => '{"fr":"La OFEM Juliette 758 de 2003 est une plieuse-colleuse conçue pour les travaux d\'emballage et de finition. Elle offre une performance fiable pour le pliage et le collage de boîtes pliantes, idéale pour les moyennes séries. Sa conception robuste garantit une longue durée de vie et une grande précision de traitement.","en":"The 2003 OFEM Juliette 758 is a folder-gluer machine designed for packaging and finishing jobs. It delivers reliable performance for folding and gluing folding cartons, ideal for medium production runs. Its sturdy construction ensures long service life and high processing precision.","ar":"آلة OFEM Juliette 758 لعام 2003 هي آلة طي ولصق مصممة لأعمال التعبئة والتغليف والتشطيب. توفر أداءً موثوقًا لطي ولصق علب الكرتون، وهي مثالية للإنتاج المتوسط. تصميمها المتين يضمن عمر خدمة طويل ودقة عالية في المعالجة."}',
+                    'slug' => 'ofem-juliette-758-2003',
+                    'model' => '{"fr": "Juliette 758", "ar": "جولييت 758", "en": "Juliette 758"}',
+                    'brand' => '{"ar": "أوفيم", "en": "OFEM", "fr": "OFEM"}',
+                    'type' => '{"ar": "آلة طي ولصق", "en": "Folder-gluer", "fr": "Plieuse-colleuse"}',
+                    'speed' => '{"ar": "تصل إلى 300 متر في الدقيقة", "en": "Up to 300 meters per minute", "fr": "Jusqu’à 300 mètres par minute"}',
+                    'resolution' => '{"en":null}',
+                    'max_print_size' => '{"ar": "يعتمد على تخطيط العلبة", "en": "Depends on carton layout", "fr": "Dépend de la mise en page de la boîte"}',
+                    'color_capability' => 0,
+                    'duplex' => 0,
+                    'connectivity' => '{"ar": "غير متصلة رقميًا", "en": "No digital connectivity", "fr": "Pas de connectivité numérique"}',
+                    'power_consumption' => '{"ar": "تقريبًا 5 كيلو وات", "en": "Approx. 5 kW", "fr": "Env. 5 kW"}',
+                    'condition' => '{"ar": "مستخدمة", "en": "Used", "fr": "Utilisée"}',
+                    'stock_quantity' => 1,
+                    'price' => 9800.0,
+                    'warranty' => NULL,
+                    'manufacture_year' => '2003',
+                    'images' => '["products\\/01JX3PJBHYTNTCNZAN5PYT75B3.jpg","products\\/01JX3PJBJBEVN5WXQHRX1WDC6K.jpg"]',
+                    'category_id' => 6,
+                    'created_at' => '2025-06-07 13:20:00',
+                    'updated_at' => '2025-06-06 22:42:44',
+                ),
         ));
 
 
