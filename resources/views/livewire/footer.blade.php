@@ -1,5 +1,5 @@
 <div>
-    <footer class="shadow-lg shadow-gray-500 relative bg-gray-900 pt-20 lg:pt-[100px]" data-wow-delay=".15s">
+    <footer class="shadow-lg shadow-gray-500 relative bg-gray-900 pt-20 lg:pt-[60px]" data-wow-delay=".15s">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full justify-center px-4 sm:w-1/4">
@@ -167,7 +167,7 @@
             </div>
         </div>
 
-        <div class="mt-12 border-t border-primary border-opacity-40 py-8 lg:mt-[60px]">
+        <div class="border-t border-primary border-opacity-40 py-8">
             <div class="container mx-auto">
                 <div class="flex flex-wrap">
                     <div class="w-full px-4 md:w-1/3 lg:w-1/2">
