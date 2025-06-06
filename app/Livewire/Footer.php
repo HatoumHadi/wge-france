@@ -15,10 +15,17 @@ class Footer extends Component
     public $facebook;
     public $linkedIn;
 
+    public $contact_section_address_content;
+    public $contact_section_whatsapp_content;
+    public $contact_telephone_content;
+    public $contact_email_content;
+
+
+
+
+
     public function mount()
     {
-        $this->logo = LandingSetting::where('key', 'logo')->first()->value;
-
         $settings = Setting::whereIn('key', [
             'instagram_link',
             'facebook_link',
@@ -30,6 +37,22 @@ class Footer extends Component
         $this->facebook = $settings['facebook_link'];
         $this->x = $settings['x_link'];
         $this->linkedIn = $settings['linkedIn_link'];
+
+
+        $data = LandingSetting::whereIn('key', [
+            'contact_section_address_content',
+            'contact_section_whatsapp_content',
+            'contact_telephone_content',
+            'contact_email_content',
+            'logo',
+        ])->pluck('value', 'key');
+
+        $this->logo = $data['logo'];
+        $this->contact_email_content = $data['contact_email_content'];
+        $this->contact_telephone_content = $data['contact_telephone_content'];
+        $this->contact_section_whatsapp_content = $data['contact_section_whatsapp_content'];
+        $this->contact_section_address_content = $data['contact_section_address_content'];
+
     }
 
     public function render()

@@ -1,30 +1,40 @@
 <div>
-    <footer class="shadow-lg shadow-gray-500 relative bg-black pt-20 lg:pt-[100px]" data-wow-delay=".15s">
+    <footer class="shadow-lg shadow-gray-500 relative bg-gray-900 pt-20 lg:pt-[100px]" data-wow-delay=".15s">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full justify-center px-4 sm:w-1/2">
-                    <div class="mb-10 w-full flex flex-col items-center justify-center">
-                        <a href="{{ route('home') }}"
-                           class="inline-block max-w-[160px] focus:outline-none">
-                            <img src="{{ asset($logo) }}" alt="logo" class="max-w-full"/>
-                        </a>
-
-                        <div class="-mx-3 flex items-center mt-6">
-                            <a href="{{$facebook}}" target="_blank" rel="noopener noreferrer" class="px-3 text-white hover:text-secondary focus:outline-none">
-                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg" class="fill-current">
-                                    <path
-                                        d="M16.294 8.86875H14.369H13.6815V8.18125V6.05V5.3625H14.369H15.8128C16.1909 5.3625 16.5003 5.0875 16.5003 4.675V1.03125C16.5003 0.653125 16.2253 0.34375 15.8128 0.34375H13.3034C10.5878 0.34375 8.69714 2.26875 8.69714 5.12187V8.1125V8.8H8.00964H5.67214C5.19089 8.8 4.74402 9.17812 4.74402 9.72812V12.2031C4.74402 12.6844 5.12214 13.1313 5.67214 13.1313H7.94089H8.62839V13.8188V20.7281C8.62839 21.2094 9.00652 21.6562 9.55652 21.6562H12.7878C12.994 21.6562 13.1659 21.5531 13.3034 21.4156C13.4409 21.2781 13.544 21.0375 13.544 20.8312V13.8531V13.1656H14.2659H15.8128C16.2596 13.1656 16.6034 12.8906 16.6721 12.4781V12.4438V12.4094L17.1534 10.0375C17.1878 9.79688 17.1534 9.52187 16.9471 9.24687C16.8784 9.075 16.569 8.90312 16.294 8.86875Z"/>
-                                </svg>
+                <div class="w-full justify-center px-4 sm:w-1/4">
+                    <div class="mb-10 w-full flex flex-col">
+                        <div>
+                            <a href="{{ route('home') }}"
+                               class="inline-block max-w-[160px] focus:outline-none">
+                                <img src="{{ asset($logo) }}" alt="logo" class="max-w-full"/>
                             </a>
-                            <a href="{{$x}}" target="_blank" rel="noopener noreferrer" class="px-3 text-white hover:text-secondary focus:outline-none">
+                            <p class="text-gray-400 mt-8">Your trusted partner for industrial printing equipment solutions
+                                in France and Europe.</p>
+                        </div>
+
+                        <div class="flex items-center mt-6">
+
+                            <a href="{{$x}}" target="_blank" rel="noopener noreferrer"
+                               class="pr-3 text-gray-400 hover:text-secondary focus:outline-none">
                                 <svg width="22" height="22" class="fill-current" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 512 512">
                                     <path
                                         d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
                                 </svg>
                             </a>
-                            <a href="{{$instagram}}" target="_blank" rel="noopener noreferrer" class="px-3 text-white hover:text-secondary focus:outline-none">
+
+                            <a href="{{$facebook}}" target="_blank" rel="noopener noreferrer"
+                               class="px-3 text-gray-400 hover:text-secondary focus:outline-none">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" class="fill-current">
+                                    <path
+                                        d="M16.294 8.86875H14.369H13.6815V8.18125V6.05V5.3625H14.369H15.8128C16.1909 5.3625 16.5003 5.0875 16.5003 4.675V1.03125C16.5003 0.653125 16.2253 0.34375 15.8128 0.34375H13.3034C10.5878 0.34375 8.69714 2.26875 8.69714 5.12187V8.1125V8.8H8.00964H5.67214C5.19089 8.8 4.74402 9.17812 4.74402 9.72812V12.2031C4.74402 12.6844 5.12214 13.1313 5.67214 13.1313H7.94089H8.62839V13.8188V20.7281C8.62839 21.2094 9.00652 21.6562 9.55652 21.6562H12.7878C12.994 21.6562 13.1659 21.5531 13.3034 21.4156C13.4409 21.2781 13.544 21.0375 13.544 20.8312V13.8531V13.1656H14.2659H15.8128C16.2596 13.1656 16.6034 12.8906 16.6721 12.4781V12.4438V12.4094L17.1534 10.0375C17.1878 9.79688 17.1534 9.52187 16.9471 9.24687C16.8784 9.075 16.569 8.90312 16.294 8.86875Z"/>
+                                </svg>
+                            </a>
+
+                            <a href="{{$instagram}}" target="_blank" rel="noopener noreferrer"
+                               class="px-3 text-gray-400 hover:text-secondary focus:outline-none">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                      xmlns="http://www.w3.org/2000/svg" class="fill-current">
                                     <path
@@ -35,7 +45,8 @@
                                         d="M16.0276 4.96777C15.6432 4.96777 15.318 5.29304 15.318 5.67745C15.318 6.06186 15.6432 6.38713 16.0276 6.38713C16.412 6.38713 16.7373 6.06186 16.7373 5.67745C16.7373 5.29304 16.4416 4.96777 16.0276 4.96777Z"/>
                                 </svg>
                             </a>
-                            <a href="{{$linkedIn}}" target="_blank" rel="noopener noreferrer" class="px-3 text-white hover:text-secondary focus:outline-none">
+                            <a href="{{$linkedIn}}" target="_blank" rel="noopener noreferrer"
+                               class="px-3 text-gray-400 hover:text-secondary focus:outline-none">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                      xmlns="http://www.w3.org/2000/svg" class="fill-current">
                                     <path
@@ -45,52 +56,115 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full justify-center px-4 sm:w-1/2">
+                <div class="w-full justify-center px-4 sm:w-1/4">
                     <div class="text-white font-bold text-xl">
-                        <p>{{__('trans.about')}}</p>
+                        <p>Quick Links</p>
                     </div>
-                    <div class="mt-8 mb-10 w-full">
-                        <div class="flex gap-8 w-3/5">
+                    <div class="mt-10 mb-10 w-full">
+                        <div>
                             <ul>
-                                <li>
+                                <li class="mt-2">
                                     <a href="{{ route('home') }}"
-                                       class="mb-3 inline-block text-base text-white hover:text-primary focus:outline-none">
+                                       class="mb-3 inline-block text-base text-gray-400 hover:text-primary focus:outline-none">
                                         {{ __('trans.home') }}
                                     </a>
                                 </li>
 
-                                <li>
-                                    <a href="{{ route('our-mission') }}"
-                                       class="mb-3 inline-block text-base text-white hover:text-primary focus:outline-none">
-                                        {{ __('trans.our_mission') }}
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('our-vision') }}"
-                                       class="mb-3 inline-block text-base text-white hover:text-primary focus:outline-none">
-                                        {{ __('trans.our_vision') }}
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="ml-auto">
-                                <li>
-                                    <a href="{{ route('faq') }}"
-                                       class="mb-3 inline-block text-base text-white hover:text-primary focus:outline-none">
-                                        {{ __('trans.faq') }}
+                                <li class="mt-2">
+                                    <a href="{{ route('about-us') }}"
+                                       class="mb-3 inline-block text-base text-gray-400 hover:text-primary focus:outline-none">
+                                        {{ __('trans.about_us') }}
                                     </a>
                                 </li>
 
-                                <li>
+                                <li class="mt-2">
+                                    <a href="{{ route('products') }}"
+                                       class="mb-3 inline-block text-base text-gray-400 hover:text-primary focus:outline-none">
+                                        {{ __('trans.products') }}
+                                    </a>
+                                </li>
+
+                                <li class="mt-2">
                                     <a href="{{ route('contact-us') }}"
-                                       class="mb-3 inline-block text-base text-white hover:text-primary focus:outline-none">
+                                       class="mb-3 inline-block text-base text-gray-400 hover:text-primary focus:outline-none">
                                         {{ __('trans.contact_us') }}
                                     </a>
                                 </li>
-
                             </ul>
                         </div>
                     </div>
                 </div>
+                <div class="w-full justify-center px-4 sm:w-1/4">
+                    <div class="text-white font-bold text-xl">
+                        <p>Services</p>
+                    </div>
+                    <div class="mt-10 mb-10 w-full">
+                        <div>
+                            <ul>
+                                <li class="mt-2">
+                                    <p class="mb-3 inline-block text-base text-gray-400  focus:outline-none">
+                                        Equipment Sales
+                                    </p>
+                                </li>
+
+                                <li class="mt-2">
+                                    <p class="mb-3 inline-block text-base text-gray-400  focus:outline-none">
+                                        Equipment Purchase
+                                    </p>
+                                </li>
+
+                                <li class="mt-2">
+                                    <p class="mb-3 inline-block text-base text-gray-400  focus:outline-none">
+                                        Technical Support
+                                    </p>
+                                </li>
+
+                                <li class="mt-2">
+                                    <p class="mb-3 inline-block text-base text-gray-400  focus:outline-none">
+                                        Maintenance
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full justify-center px-4 sm:w-1/4">
+                    <div class="text-white font-bold text-xl">
+                        <p>Contact Info</p>
+                    </div>
+                    <div class="mt-10 mb-10 w-full">
+                        <div>
+                            <ul class="space-y-5">
+                                <!-- WhatsApp -->
+                                <li>
+                                    <a href="https://wa.me/{{ str_replace(' ', '', $contact_section_whatsapp_content) }}?text=Hello"
+                                       target="_blank"
+                                       class="flex items-center gap-4 text-gray-400 hover:text-green-500 transition-colors">
+                                        <i class="fa-brands fa-whatsapp text-2xl text-green-500"></i>
+                                        <span class="text-base">{{ $contact_section_whatsapp_content }}</span>
+                                    </a>
+                                </li>
+
+                                <!-- Email -->
+                                <li>
+                                    <div class="flex items-center gap-4 text-gray-400 transition-colors">
+                                        <i class="fa-solid fa-envelope text-2xl text-gray-400"></i>
+                                        <span class="text-base">{{ $contact_email_content }}</span>
+                                    </div>
+                                </li>
+
+                                <!-- Address -->
+                                <li>
+                                    <div class="flex items-center gap-4 text-gray-400 transition-colors">
+                                        <i class="fa-solid fa-location-dot text-2xl text-gray-400"></i>
+                                        <span class="text-base">{{ $contact_section_address_content }}</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -101,9 +175,9 @@
                         <div class="my-1">
                             <div class="-mx-3 flex items-center justify-center md:justify-start">
                                 <div class="flex justify-end items-center p-2">
-{{--                                    <button class="px-3 text-base text-primary hover:text-secondary hover:underline">--}}
-{{--                                        {{ __('trans.privacy_policy') }}--}}
-{{--                                    </button>--}}
+                                    {{--                                    <button class="px-3 text-base text-primary hover:text-secondary hover:underline">--}}
+                                    {{--                                        {{ __('trans.privacy_policy') }}--}}
+                                    {{--                                    </button>--}}
                                 </div>
                             </div>
                         </div>
