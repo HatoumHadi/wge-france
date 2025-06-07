@@ -177,7 +177,7 @@
                             </svg>
                         </button>
 
-                        <div x-show="open" @click.away="open = false"
+                        <div x-show="open" x-cloak @click.away="open = false"
                              class="absolute w-28 bg-white border rounded shadow-lg right-4 sm:right-0 top-[60px] sm:-left-10">
                             <div class="py-1">
                                 <button wire:click="switchLanguage('en')"
