@@ -676,6 +676,16 @@ class LanguageLineSeeder extends Seeder
                 'ar' => 'صيانة',
                 'fr' => 'Entretien',
             ],
+            'pagination previous' => [
+                'en' => 'Previous',
+                'ar' => 'سابق',
+                'fr' => 'Précédente',
+            ],
+            'pagination next' => [
+                'en' => 'Next',
+                'ar' => 'التالي',
+                'fr' => 'Suivante',
+            ],
         ];
 
         foreach ($lines as $english => $translations) {

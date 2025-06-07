@@ -5,24 +5,24 @@
             @if ($paginator->onFirstPage())
                 <span
                     class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-primary bg-white border border-primary cursor-default leading-5 rounded-md">
-                    {!! __('pagination.previous') !!}
+                    {{__('trans.pagination_previous')}}
                 </span>
             @else
                 <a href="{{ $paginator->previousPageUrl() }}"
                    class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-primary border border-primary leading-5 rounded-md hover:bg-primary/90 focus:outline-none focus:ring ring-primary/50 focus:border-primary active:bg-primary/80 transition ease-in-out duration-150">
-                    {!! __('pagination.previous') !!}
+                    {{__('trans.pagination_previous')}}
                 </a>
             @endif
 
             @if ($paginator->hasMorePages())
                 <a href="{{ $paginator->nextPageUrl() }}"
                    class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-white bg-primary border border-primary leading-5 rounded-md hover:bg-primary/90 focus:outline-none focus:ring ring-primary/50 focus:border-primary active:bg-primary/80 transition ease-in-out duration-150">
-                    {!! __('pagination.next') !!}
+                    {{__('trans.pagination_next')}}
                 </a>
             @else
                 <span
                     class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-primary bg-white border border-primary cursor-default leading-5 rounded-md">
-                    {!! __('pagination.next') !!}
+                    {{__('trans.pagination_next')}}
                 </span>
             @endif
         </div>

@@ -66,7 +66,7 @@
 
             <button wire:click="resetCategories()"
                     @click.prevent="$dispatch('close-filter')"
-                    class="w-full py-2 bg-gray-500 mt-4 text-white font-bold text-base rounded-lg">
+                    class="w-full py-2 bg-gray-900 mt-4 text-white font-bold text-base rounded-lg">
                 {{ __('trans.reset_filter') }}
             </button>
         </div>

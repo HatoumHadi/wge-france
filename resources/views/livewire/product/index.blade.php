@@ -33,6 +33,7 @@
         <div class="flex flex-col sm:flex-row justify-center" x-data="{ openFilter: false }">
             <div class="w-3/4 sm:w-1/4">
                 <div x-show="openFilter"
+                     x-cloak
                      x-transition:enter="transition ease-in-out duration-300 transform"
                      x-transition:enter-start="opacity-0 -translate-x-full"
                      x-transition:enter-end="opacity-100 translate-x-0"
@@ -43,7 +44,7 @@
                      @close-filter.window="openFilter = false"
                      class="fixed top-0 left-0 w-64 h-screen bg-white shadow-lg overflow-y-auto z-50">
                     <div @click="$dispatch('close-filter')"
-                            class="w-full p-4 bg-gray-500 text-white font-bold text-base text-left">
+                            class="w-full p-4 bg-gray-900 text-white font-bold text-base text-left">
                         <i class="fa-solid fa-angle-left"></i>
                         <span class="ml-2">{{__('trans.back')}}</span>
                     </div>
