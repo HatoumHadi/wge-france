@@ -73,7 +73,7 @@
                 </iframe>
             </div>
 
-            <div class="flex justify-center items-center mb-8 w-full bg-cover bg-center bg-no-repeat relative h-screen"
+            <div class="flex justify-center items-center mb-8 w-full bg-cover bg-center bg-no-repeat relative min-h-screen"
                  style="background-image: url('{{ asset('storage/img/home-bg.jpg') }}');">
                 <form class="w-full max-w-lg p-6 border border-gray-300 rounded-lg shadow-lg bg-gray-300 mt-14 sm:mt-6 mx-4 sm:mx-0"
                       wire:submit="save">
