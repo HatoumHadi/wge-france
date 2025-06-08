@@ -28,4 +28,14 @@ class Show extends Component
             'currency' => $this->currency
         ])->layout('components.layouts.app');
     }
+
+    public function redirectToHome()
+    {
+        return redirect()->route('home');
+    }
+
+    public function redirectToProducts()
+    {
+        return redirect()->route('products');
+    }
 }

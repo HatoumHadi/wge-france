@@ -2,12 +2,14 @@
     <div class="p-4 flex justify-center bg-gray-200 mt-14 sm:mt-16">
         <div class="w-full sm:w-4/5">
             <div class="flex items-center sm:mx-4">
-                <i class="fa-solid fa-house text-primary"></i>
-                <div wire:click="{{route('home')}}" class="cursor-pointer">
+                <div wire:click="redirectToHome" class="cursor-pointer">
+                    <i class="fa-solid fa-house text-primary"></i>
+                </div>
+                <div wire:click="redirectToHome" class="cursor-pointer">
                     <p class="ml-2 text-gray-500 text-xs sm:text-base">{{ __('trans.home') }}</p>
                 </div>
                 <i class="fa-solid fa-arrow-right text-primary ml-2"></i>
-                <div wire:click="{{route('products')}}" class="cursor-pointer">
+                <div wire:click="redirectToProducts" class="cursor-pointer">
                     <p class="ml-2 text-gray-500 text-xs sm:text-base">Products</p>
                 </div>
                 <i class="fa-solid fa-arrow-right text-primary ml-2"></i>

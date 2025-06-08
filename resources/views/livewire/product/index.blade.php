@@ -17,7 +17,9 @@
     <div class="mb-4 p-4 flex justify-center bg-gray-200">
         <div class="w-4/5">
             <div class="flex items-center mx-4">
-                <i class="fa-solid fa-house text-primary"></i>
+                <div wire:click="redirectToHome" class="cursor-pointer">
+                    <i class="fa-solid fa-house text-primary"></i>
+                </div>
                 <div wire:click="redirectToHome" class="cursor-pointer">
                     <p class="ml-2 text-gray-500">{{ __('trans.home') }}</p>
                 </div>
@@ -44,7 +46,7 @@
                      @close-filter.window="openFilter = false"
                      class="fixed top-0 left-0 w-64 h-screen bg-white shadow-lg overflow-y-auto z-50">
                     <div @click="$dispatch('close-filter')"
-                            class="w-full p-4 bg-gray-900 text-white font-bold text-base text-left">
+                         class="w-full p-4 bg-gray-900 text-white font-bold text-base text-left">
                         <i class="fa-solid fa-angle-left"></i>
                         <span class="ml-2">{{__('trans.back')}}</span>
                     </div>
