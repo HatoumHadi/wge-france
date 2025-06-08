@@ -18,7 +18,9 @@
         <div class="mb-4 p-4 flex justify-center bg-gray-200">
             <div class="w-4/5">
                 <div class="flex items-center mx-4">
-                    <i class="fa-solid fa-house text-primary"></i>
+                    <div wire:click="redirectToHome" class="cursor-pointer">
+                        <i class="fa-solid fa-house text-primary"></i>
+                    </div>
                     <div wire:click="redirectToHome" class="cursor-pointer">
                         <p class="ml-2 text-gray-500">{{ __('trans.home') }}</p>
                     </div>
