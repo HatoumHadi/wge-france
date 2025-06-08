@@ -7,48 +7,44 @@
         <div class="flex-1 overflow-y-auto scrollbar-hide">
             @foreach($categories->whereNull('parent_id') as $category)
                 <div x-data="{ open: false }" class="group bg-gray-100 p-4 border border-gray-300 mb-3 shadow-sm">
-                    <div
-                        class="group flex justify-between items-center cursor-pointer transition-colors duration-200 p-2"
-                        @click="open = !open">
-                        <div class="flex items-center space-x-2">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-2 flex-1">
                             <input
                                 type="checkbox"
                                 name="filterSelectedCategories.{{ $category->id }}"
                                 id="filterSelectedCategories.{{ $category->id }}"
                                 value="{{ $category->id }}"
                                 wire:model.live="selectedCategories.{{ $category->id }}"
-                                x-ref="checkbox"
-                                @click="if ($event.target !== $refs.checkbox) { open = !open }">
-                            <label for="selectedCategories.{{ $category->id }}"
-                                   class="text-sm font-medium {{ $selectedCategories[$category->id] ?? false ? 'text-primary' : 'text-gray-700' }}"
-                                   @click="open = !open">
+                                class="mr-2">
+                            <label for="filterSelectedCategories.{{ $category->id }}"
+                                   class="text-sm font-medium flex-1 {{ $selectedCategories[$category->id] ?? false ? 'text-primary' : 'text-gray-700' }}">
                                 {{ $category->name }}
                             </label>
                         </div>
 
                         @if($categories->where('parent_id', $category->id)->isNotEmpty())
-                            <!-- Arrow icon click will also toggle the open state -->
-                            <span :class="{ 'rotate-180': open }"
-                                  class="transition-transform duration-300 text-gray-600 group-hover:text-primary">▼</span>
+                            <button @click="open = !open" class="p-2 -mr-2">
+                                <span :class="{ 'rotate-180': open }"
+                                      class="transition-transform duration-300 text-gray-600 group-hover:text-primary">▼</span>
+                            </button>
                         @endif
                     </div>
 
                     @if($categories->where('parent_id', $category->id)->isNotEmpty())
                         <div x-show="open" x-transition:enter="transition-all duration-300 ease-in-out"
                              x-transition:leave="transition-all duration-300 ease-in-out"
-                             class="ml-4 mt-2 space-y-2 border-l border-gray-300 pl-3">
+                             class="ml-6 mt-2 space-y-2 pl-3">
                             @foreach($categories->where('parent_id', $category->id) as $child)
-                                <div class="flex items-center space-x-2">
+                                <div class="flex items-center space-x-2 pl-2">
                                     <input
                                         type="checkbox"
                                         name="selected_Categories.{{ $child->id }}"
                                         id="selected_Categories.{{ $child->id }}"
                                         value="{{ $child->id }}"
                                         wire:model.live="selectedCategories.{{ $child->id }}"
-                                        @click="open = !open">
-                                    <label for="selectedCategories.{{ $child->id }}"
-                                           class="text-sm font-medium {{ $selectedCategories[$child->id] ?? false ? 'text-primary' : 'text-gray-700' }}"
-                                           @click="open = !open">
+                                        class="mr-2">
+                                    <label for="selected_Categories.{{ $child->id }}"
+                                           class="text-sm font-medium {{ $selectedCategories[$child->id] ?? false ? 'text-primary' : 'text-gray-700' }}">
                                         {{ $child->name }}
                                     </label>
                                 </div>
