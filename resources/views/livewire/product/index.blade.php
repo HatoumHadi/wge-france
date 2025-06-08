@@ -86,8 +86,8 @@
                                         :key="'product-'.$product->id"/>
                     @endforeach
                 </div>
-                <div>
-                    {{ $products->links('pagination::tailwind') }}
+                <div class="mt-10">
+                    {{ $products->links('vendor.livewire.tailwind') }}
                 </div>
             </div>
         </div>

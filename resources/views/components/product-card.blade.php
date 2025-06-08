@@ -1,6 +1,6 @@
 <div>
     <div
-        class="bg-white shadow-lg overflow-hidden transform transition-transform sm:hover:scale-105 flex flex-col">
+        class="bg-white shadow-lg overflow-hidden transform transition-transform sm:hover:scale-105 flex flex-col min-h-[400px]">
         <!-- Swiper Section -->
         <div class="swiper_2 mySwiper_2">
             <div class="swiper-wrapper">
