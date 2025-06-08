@@ -17,11 +17,11 @@
                 <span>
                     @if ($paginator->onFirstPage())
                         <span class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-primary bg-white border border-primary cursor-default leading-5 rounded-md">
-                            {!! __('pagination.previous') !!}
+                            {{__('trans.pagination_previous')}}
                         </span>
                     @else
                         <button type="button" wire:click="previousPage('{{ $paginator->getPageName() }}')" x-on:click="{{ $scrollIntoViewJsSnippet }}" wire:loading.attr="disabled" dusk="previousPage{{ $paginator->getPageName() == 'page' ? '' : '.' . $paginator->getPageName() }}.before" class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-primary border border-primary leading-5 rounded-md hover:bg-primary/90 focus:outline-none focus:ring ring-primary/50 focus:border-primary active:bg-primary/80 transition ease-in-out duration-150">
-                            {!! __('pagination.previous') !!}
+                        {{__('trans.pagination_previous')}}
                         </button>
                     @endif
                 </span>
@@ -29,11 +29,11 @@
                 <span>
                     @if ($paginator->hasMorePages())
                         <button type="button" wire:click="nextPage('{{ $paginator->getPageName() }}')" x-on:click="{{ $scrollIntoViewJsSnippet }}" wire:loading.attr="disabled" dusk="nextPage{{ $paginator->getPageName() == 'page' ? '' : '.' . $paginator->getPageName() }}.before" class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-white bg-primary border border-primary leading-5 rounded-md hover:bg-primary/90 focus:outline-none focus:ring ring-primary/50 focus:border-primary active:bg-primary/80 transition ease-in-out duration-150">
-                            {!! __('pagination.next') !!}
+                                  {{__('trans.pagination_next')}}
                         </button>
                     @else
                         <span class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-primary bg-white border border-primary cursor-default leading-5 rounded-md">
-                            {!! __('pagination.next') !!}
+                               {{__('trans.pagination_next')}}
                         </span>
                     @endif
                 </span>
@@ -42,17 +42,17 @@
             <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
                 <div>
                     <p class="text-sm text-primary leading-5">
-                        <span>{!! __('Showing') !!}</span>
+                        <span>{{__('trans.pagination_showing')}}</span>
                         @if ($paginator->firstItem())
                             <span class="font-medium">{{ $paginator->firstItem() }}</span>
-                            <span>{!! __('to') !!}</span>
+                            <span>{{__('trans.pagination_to')}}</span>
                             <span class="font-medium">{{ $paginator->lastItem() }}</span>
                         @else
                             <span class="font-medium">{{ $paginator->count() }}</span>
                         @endif
-                        <span>{!! __('of') !!}</span>
+                        <span>{{__('trans.pagination_of')}}</span>
                         <span class="font-medium">{{ $paginator->total() }}</span>
-                        <span>{!! __('results') !!}</span>
+                        <span>{{__('trans.pagination_results')}}</span>
                     </p>
                 </div>
 
