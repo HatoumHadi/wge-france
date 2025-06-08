@@ -22,7 +22,7 @@ class CategoriesTableSeeder extends Seeder
             0 =>
                 array(
                     'id' => 1,
-                    'name' => '{"ar": "الإزاحة", "en": "Offset", "fr": "offset"}',
+                    'name' => '{"ar": "الإزاحة", "en": "Offset", "fr": "Offset"}',
                     'description' => '{"ar": "آلة تُستخدم لطباعة تصاميم ملونة عالية الجودة على الورق، وتُستخدم غالبًا في الكتب والكتيبات والتغليف", "en": "A machine used to print high-quality color designs on paper, often used for books, brochures, and packaging", "fr": "Une machine utilisée pour imprimer des designs en couleur de haute qualité sur papier, souvent utilisée pour les livres, les brochures et les emballages"}',
                     'parent_id' => NULL,
                     'created_at' => '2025-01-08 12:49:43',
@@ -31,7 +31,7 @@ class CategoriesTableSeeder extends Seeder
             1 =>
                 array(
                     'id' => 2,
-                    'name' => '{"ar": "إزاحة رباعية الألوان", "en": "4-color offset", "fr": "offset 4 couleurs"}',
+                    'name' => '{"ar": "إزاحة رباعية الألوان", "en": "4-color offset", "fr": "Offset 4 couleurs"}',
                     'description' => '{"ar": "آلة تُستخدم لطباعة تصاميم ملونة عالية الجودة على الورق، وتُستخدم غالبًا في الكتب والكتيبات والتغليف", "en": "A machine used to print high-quality color designs on paper, often used for books, brochures, and packaging", "fr": "Une machine utilisée pour imprimer des designs en couleur de haute qualité sur papier, souvent utilisée pour les livres, les brochures et les emballages"}',
                     'parent_id' => 1,
                     'created_at' => '2025-01-08 12:49:43',
@@ -49,7 +49,7 @@ class CategoriesTableSeeder extends Seeder
             3 =>
                 array(
                     'id' => 4,
-                    'name' => '{"ar": "إزاحة لون واحد", "en": "1-color offset", "fr": "offset 1 couleur"}',
+                    'name' => '{"ar": "إزاحة لون واحد", "en": "1-color offset", "fr": "Offset 1 couleur"}',
                     'description' => '{"ar": "آلة طباعة تستخدم لونًا واحدًا فقط، مثالية لطباعة النصوص أو التصاميم أحادية اللون مثل الإيصالات أو المستندات الرسمية", "en": "A printing machine that uses only one color, ideal for printing text or monochrome designs like receipts or official documents", "fr": "Une machine d`impression qui utilise une seule couleur, idéale pour l`impression de textes ou de designs monochromes comme les reçus ou les documents officiels"}',
                     'parent_id' => 1,
                     'created_at' => '2025-01-08 12:50:00',
@@ -58,7 +58,7 @@ class CategoriesTableSeeder extends Seeder
             4 =>
                 array(
                     'id' => 5,
-                    'name' => '{"ar": "إزاحة لونين", "en": "2-color offset", "fr": "offset 2 couleurs"}',
+                    'name' => '{"ar": "إزاحة لونين", "en": "2-color offset", "fr": "Offset 2 couleurs"}',
                     'description' => '{"ar": "آلة تُستخدم للطباعة بلونين، مناسبة للمطبوعات التي لا تتطلب ألوان كاملة ولكن بجودة جيدة", "en": "A machine used for printing in two colors, suitable for prints that don`t require full color but need good quality", "fr": "Une machine utilisée pour imprimer en deux couleurs, adaptée aux impressions qui ne nécessitent pas de couleurs complètes mais une bonne qualité"}',
                     'parent_id' => 1,
                     'created_at' => '2025-01-08 12:50:00',
