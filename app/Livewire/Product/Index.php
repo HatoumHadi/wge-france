@@ -62,7 +62,12 @@ class Index extends Component
         $productsQuery = Product::query();
 
         if (!empty($this->selectedCategories)) {
-            $productsQuery->whereIn('category_id', $this->selectedCategories);
+            $allCategoryIds = Category::whereIn('id', $this->selectedCategories)
+                ->orWhereIn('parent_id', $this->selectedCategories)
+                ->pluck('id')
+                ->toArray();
+
+            $productsQuery->whereIn('category_id', $allCategoryIds);
         }
 
         if (!empty($this->search)) {
