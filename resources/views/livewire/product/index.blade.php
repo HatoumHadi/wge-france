@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <div class="p-4 sm:p-16">
+    <div class="p-4 sm:px-16 sm:pt-8 sm:pb-16">
         <div class="flex flex-col sm:flex-row justify-center" x-data="{ openFilter: false }">
             <div class="w-3/4 sm:w-1/4">
                 <div x-show="openFilter"
@@ -56,7 +56,7 @@
                     <livewire:product.category-section :categories="$categories"/>
                 </div>
             </div>
-            <div class="w-full sm:w-3/4 {{Session::get('direction') == 'rtl' ? 'sm:mr-4':'sm:ml-4'}}">
+            <div class="w-full sm:mt-3 sm:w-3/4 {{Session::get('direction') == 'rtl' ? 'sm:mr-4':'sm:ml-4'}}">
                 <div class="relative mb-4 w-full">
                     <input
                         type="text"

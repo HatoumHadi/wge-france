@@ -6,7 +6,7 @@
     <div class="p-4 flex flex-col h-[75vh]">
         <div class="flex-1 overflow-y-auto scrollbar-hide">
             @foreach($categories->whereNull('parent_id') as $category)
-                <div x-data="{ open: false }" class="group bg-gray-100 p-4 border border-gray-300 mb-3 shadow-sm">
+                <div x-data="{ open: false }" class="group bg-gray-100 p-1 border border-gray-300 mb-3 shadow-sm">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-2 flex-1">
                             <input
@@ -25,7 +25,7 @@
                         @if($categories->where('parent_id', $category->id)->isNotEmpty())
                             <button @click="open = !open" class="p-2 -mr-2">
                                 <span :class="{ 'rotate-180': open }"
-                                      class="transition-transform duration-300 text-gray-600 group-hover:text-primary">▼</span>
+                                      class="transition-transform transform duration-300 text-gray-600 group-hover:text-primary block">▼</span>
                             </button>
                         @endif
                     </div>

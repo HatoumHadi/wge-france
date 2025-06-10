@@ -3,9 +3,9 @@
         {{ __('trans.product_category') }}
     </h2>
 
-    <div class="p-4">
+    <div class="pt-4">
         @foreach($categories->whereNull('parent_id') as $category)
-            <div x-data="{ open: false }" class="group bg-gray-100 p-4 border border-gray-300 mb-3 shadow-sm">
+            <div x-data="{ open: false }" class="group bg-gray-100 p-1 border border-gray-300 mb-3 shadow-sm">
                 <div class="group flex justify-between items-center cursor-pointer transition-colors duration-200 p-2"
                      @click="open = !open">
                     <div class="flex items-center space-x-2">

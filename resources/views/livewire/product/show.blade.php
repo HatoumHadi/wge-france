@@ -77,9 +77,9 @@
 
 
                     </div>
-                    <div class="sm:w-1/2 w-full {{ app()->getLocale() == 'ar' ? 'mr-4' : 'ml-4' }} mt-8">
-                        <h2 class="text-2xl font-semibold text-primary">{{ $product->name }}</h2>
-                        <p class="text-gray-700 mt-4">{{ $product->description }}</p>
+                    <div class="sm:w-1/2 w-full {{ app()->getLocale() == 'ar' ? 'sm:mr-10' : 'sm:ml-10' }} mt-8">
+                        <h2 class="text-2xl font-semibold text-primary text-center sm:text-left">{{ $product->name }}</h2>
+                        <p class="text-gray-700 mt-4 text-center sm:text-left">{{ $product->description }}</p>
                     </div>
                 </div>
 
@@ -158,7 +158,7 @@
 
                 <!-- Related Product -->
                 <div class="p-12 mb-8">
-                    <h2 class="text-2xl font-bold text-primary text-center mb-4">{{__('trans.related_products')}}</h2>
+                    <h2 class="text-3xl font-bold text-primary text-center mb-6">{{__('trans.related_products')}}</h2>
                     @if(count($relatedProducts) == 0)
                         <div>
                             <p class="text-center text-gray-500">{{__('trans.no_related_products')}}</p>
