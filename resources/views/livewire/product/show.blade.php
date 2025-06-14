@@ -157,14 +157,14 @@
 
 
                 <!-- Related Product -->
-                <div class="p-12 mb-8">
-                    <h2 class="text-3xl font-bold text-primary text-center mb-6">{{__('trans.related_products')}}</h2>
+                <div class="pt-12 mb-8">
+                    <h2 class="text-3xl font-bold text-primary text-center mb-6 mt-2">{{__('trans.related_products')}}</h2>
                     @if(count($relatedProducts) == 0)
                         <div>
                             <p class="text-center text-gray-500">{{__('trans.no_related_products')}}</p>
                         </div>
                     @else
-                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
                             @foreach($relatedProducts as $relatedProduct)
                                 <x-product-card :product="$relatedProduct"
                                                 :currency="$currency"

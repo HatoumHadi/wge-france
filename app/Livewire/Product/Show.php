@@ -34,6 +34,11 @@ class Show extends Component
         return redirect()->route('home');
     }
 
+    public function showProduct($slug)
+    {
+        return redirect()->route('product.show', compact('slug'));
+    }
+
     public function redirectToProducts()
     {
         return redirect()->route('products');
