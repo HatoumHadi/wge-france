@@ -1,17 +1,16 @@
 <div>
     <section id="our_mission">
-
         <div class="relative w-full h-[400px] mt-[73px]">
             <img src="{{ asset($our_mission_header_image) }}" class="w-full h-full object-cover" alt="points">
 
             <div class="absolute inset-0 flex items-center justify-center text-center bg-black/50">
                 <div class="text-white">
                     <h2 class="mb-3 text-3xl font-bold leading-[1.2] sm:text-4xl md:text-[40px] text-primary">
-                       {{$section_title}}
+                        {{$section_title}}
                     </h2>
                     <span class="mb-2 block text-2xl font-size-header font-semibold">
-            {{$our_mission_section_secondary_title}}
-            </span>
+                        {{$our_mission_section_secondary_title}}
+                    </span>
                 </div>
             </div>
         </div>
@@ -30,19 +29,10 @@
             </div>
         </div>
 
-
         <div class="container mx-auto wow fadeInUp" data-wow-delay=".2s">
             <div class="-mx-4 flex flex-wrap items-center mb-12 mt-12">
-                <div class="sm:hidden w-full px-4 lg:w-1/2">
-                    <div class="mb-12 max-w-[540px] lg:mb-0 lg:ml-7">
-                        <p class="mt-4 sm:mt-0 text-center sm:text-left mb-10 font-size-content leading-relaxed text-body-color dark:text-dark-6">
-                            {!! $description !!}
-                        </p>
-                    </div>
-                </div>
-
-                <div class="hidden sm:block lg:block w-full px-4 lg:w-1/2">
-                    <div class="mb-12 max-w-[540px] lg:mb-0 lg:ml-7">
+                <div class="w-full px-4 lg:w-1/2">
+                    <div class="mb-12 max-w-[540px] lg:mb-0 lg:ml-7 text-center sm:text-left">
                         <p class="mb-10 font-size-content leading-relaxed text-body-color dark:text-dark-6">
                             {!! $description !!}
                         </p>
@@ -52,8 +42,7 @@
                 <div class="w-full px-4 lg:w-1/2">
                     <div class="-mx-2 flex flex-wrap sm:-mx-4 lg:-mx-2 xl:-mx-4">
                         <div class="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
-                            <div
-                                class="mb-4 sm:mb-8 sm:h-full lg:mb-4 xl:mb-8">
+                            <div class="mb-4 sm:mb-8 sm:h-full lg:mb-4 xl:mb-8">
                                 <img src="{{ asset($primary_image) }}" alt="about image"
                                      class="h-full w-full object-cover object-center"/>
                             </div>
