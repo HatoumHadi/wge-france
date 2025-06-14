@@ -1,32 +1,39 @@
 <div class="pl-4 border-l border-gray-300 space-y-1">
-    <div class="flex items-center space-x-2">
-        @if($category->children->count())
-            <button type="button"
-                    wire:click="toggleOpen"
-                    class="text-gray-600 hover:text-primary"
-                    style="transform: rotate({{ $open ? 180 : 0 }}deg); transition: transform 0.2s;">
-                ▼
-            </button>
-        @else
-            <span style="width: 1rem;"></span>
-        @endif
+
+    <div x-data
+         x-init="$refs.checkbox.indeterminate = {{ $this->isIndeterminate($category) ? 'true' : 'false' }}"
+         class="flex items-center space-x-3 mt-1">
+
+        <div class="w-4 h-4 flex items-center justify-center">
+            @if($category->children->count())
+                <button type="button"
+                        wire:click="toggleOpen"
+                        class="text-gray-600 hover:text-primary transform transition-transform duration-200 select-none"
+                        :class="{ 'rotate-180': {{ $open ? 'true' : 'false' }} }">
+                    ▼
+                </button>
+            @else
+                <span class="inline-block w-4 h-4"></span>
+            @endif
+        </div>
 
         <input
+            x-ref="checkbox"
             type="checkbox"
             id="category-{{ $category->id }}"
             wire:click="toggleCategory({{ $category->id }})"
             @checked($selected[$category->id] ?? false)
-            class="form-checkbox text-orange-500"
-        x-data
-        x-init="$el.indeterminate = @js($this->isIndeterminate($category))"
+            class="form-checkbox text-orange-500 rounded border-gray-400 focus:ring-primary"
         >
 
-        <label for="category-{{ $category->id }}" class="text-sm text-black">
+        <label for="category-{{ $category->id }}" class="text-sm text-black select-none">
             {{ $category->name }}
         </label>
     </div>
 
-    @if($open)
+
+
+@if($open)
         <div class="ml-4 mt-1 space-y-1">
             @foreach($category->children as $child)
                 @livewire('product.category-item', [
