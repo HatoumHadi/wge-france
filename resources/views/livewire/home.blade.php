@@ -86,7 +86,7 @@
             </section>
 
             <section
-                class="w-full mt-12 bg-cover bg-center bg-no-repeat relative h-screen"
+                class="w-full mt-12 bg-cover bg-center bg-no-repeat relative h-full mb-12 sm:mb-0"
                 style="background-image: url('{{ asset('storage/img/home-bg.jpg') }}');">
                 <!-- Overlay -->
                 <div class="absolute inset-0  bg-opacity-50"></div>
