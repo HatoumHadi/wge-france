@@ -4,48 +4,31 @@ namespace App\Livewire\Product;
 
 use App\Models\Category;
 use Livewire\Component;
+use Livewire\Attributes\On;
 
 class CategorySection extends Component
 {
     public $categories;
     public $selectedCategories = [];
 
-    public function updatedSelectedCategories(): void
+    public function mount()
     {
-        $selectedCategories = $this->selectedCategories;
+        $this->categories = Category::with('children')->get();
+    }
 
-        $unselectedCategories = array_diff_key($this->previousSelectedCategories ?? [], $selectedCategories);
-
-        // Check if any parent categories were unselected
-        foreach ($unselectedCategories as $categoryId => $wasSelected) {
-            // If this category is a parent (you'll need your own logic to determine parent/child)
-            if ($this->isParentCategory($categoryId)) {
-                // Find all child categories of this parent
-                $childCategories = $this->getChildCategories($categoryId);
-
-                // Unselect all child categories
-                foreach ($childCategories as $childId) {
-                    if (isset($selectedCategories[$childId])) {
-                        unset($selectedCategories[$childId]);
-                    }
-                }
+    #[On('child-updated-categories')]
+    public function updateFromChild(array $updatedIds): void
+    {
+        // Merge selected IDs
+        foreach ($updatedIds as $id => $selected) {
+            if ($selected) {
+                $this->selectedCategories[$id] = true;
+            } else {
+                unset($this->selectedCategories[$id]);
             }
         }
 
-        // Update the selected categories
-        $this->selectedCategories = $selectedCategories;
-
         $this->dispatch('get-categories', $this->selectedCategories);
-    }
-
-    private function isParentCategory($categoryId): bool
-    {
-        return Category::where('parent_id', $categoryId)->exists();
-    }
-
-    private function getChildCategories($parentId): array
-    {
-        return Category::where('parent_id', $parentId)->pluck('id')->toArray();
     }
 
     public function render()

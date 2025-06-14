@@ -150,7 +150,7 @@ input[type=checkbox] + label:before {
     width: 18px;
     height: 18px;
     padding-left: 2px;
-    margin-right: 1px;
+    margin-right: 3px;
     vertical-align: bottom;
     color: transparent;
     transition: 0.2s;
