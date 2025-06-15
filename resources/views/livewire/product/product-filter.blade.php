@@ -10,10 +10,20 @@
                     $hasChildren = $categories->where('parent_id', $category->id)->isNotEmpty();
                 @endphp
 
-                <div x-data="{ isOpen: false }" class="group bg-gray-100 p-1 border border-gray-300 mb-3 shadow-sm rounded">
+                <div x-data="{ isOpen: false }" class="group p-1 mb-3 shadow-sm rounded">
                     <div class="flex justify-between items-center cursor-pointer p-2 rounded">
                         <div class="flex items-center space-x-2 flex-grow"
                              @click="$wire.toggleCheck('{{ $category->id }}')">
+                            @if($hasChildren)
+                                <button
+                                    @click.stop="isOpen = !isOpen"
+                                    class="transition-transform duration-300 text-gray-600 hover:text-primary cursor-pointer"
+                                    :class="{ 'rotate-180': isOpen }">
+                                    ▼
+                                </button>
+                            @else
+                                <div class="w-4"></div>
+                            @endif
                             <input
                                 type="checkbox"
                                 name="selectedCategories.{{ $category->id }}"
@@ -33,16 +43,6 @@
                                 {{ $category->name }}
                             </label>
                         </div>
-
-                        @if($hasChildren)
-                            <button
-                                @click.stop="isOpen = !isOpen"
-                                class="transition-transform duration-300 text-gray-600 hover:text-primary ml-2 cursor-pointer"
-                                :class="{ 'rotate-180': isOpen }"
-                            >
-                                ▼
-                            </button>
-                        @endif
                     </div>
 
                     @if($hasChildren)
