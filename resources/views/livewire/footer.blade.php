@@ -59,7 +59,7 @@
                     <div class="text-white font-bold text-xl">
                         <p>{{__('trans.quick_links')}}</p>
                     </div>
-                    <div class="mt-10 mb-10 w-full">
+                    <div class="mt-8 mb-10 w-full">
                         <div>
                             <ul>
                                 <li class="mt-2">
@@ -133,30 +133,43 @@
                     </div>
                     <div class="mt-10 mb-10 w-full">
                         <div>
-                            <ul class="space-y-5">
+
+                            <ul class="space-y-4 md:space-y-5">
                                 <!-- WhatsApp -->
-                                <li>
-                                    <a href="https://wa.me/{{ str_replace(' ', '', $contact_section_whatsapp_content) }}?text=Hello"
-                                       target="_blank"
-                                       class="flex items-center gap-4 text-gray-400 hover:text-green-500 transition-colors">
-                                        <i class="fa-brands fa-whatsapp text-2xl text-green-500"></i>
-                                        <span class="text-base">{{ $contact_section_whatsapp_content }}</span>
-                                    </a>
+                                <li class="flex">
+                                    <div class="flex items-start gap-3 md:gap-4">
+                                        <div class="flex items-center justify-center w-7 h-7 md:w-8 md:h-8 shrink-0">
+                                            <i class="fa-brands fa-whatsapp text-xl md:text-2xl text-green-500"></i>
+                                        </div>
+                                        <a href="https://wa.me/{{ str_replace(' ', '', $contact_section_whatsapp_content) }}?text=Hello"
+                                           target="_blank"
+                                           class="text-gray-400 hover:text-green-500 transition-colors text-sm md:text-base mt-0.5">
+                                            {{ $contact_section_whatsapp_content }}
+                                        </a>
+                                    </div>
                                 </li>
 
                                 <!-- Email -->
-                                <li>
-                                    <div class="flex items-center gap-4 text-gray-400 transition-colors">
-                                        <i class="fa-solid fa-envelope text-2xl text-gray-400"></i>
-                                        <span class="text-base">{{ $contact_email_content }}</span>
+                                <li class="flex">
+                                    <div class="flex items-start gap-3 md:gap-4">
+                                        <div class="flex items-center justify-center w-7 h-7 md:w-8 md:h-8 shrink-0">
+                                            <i class="fa-solid fa-envelope text-xl md:text-2xl text-gray-400"></i>
+                                        </div>
+                                        <span class="text-gray-400 text-sm md:text-base mt-0.5">
+                {{ $contact_email_content }}
+            </span>
                                     </div>
                                 </li>
 
                                 <!-- Address -->
-                                <li>
-                                    <div class="flex items-center gap-4 text-gray-400 transition-colors">
-                                        <i class="fa-solid fa-location-dot text-2xl text-gray-400"></i>
-                                        <span class="text-base">{{ $contact_section_address_content }}</span>
+                                <li class="flex">
+                                    <div class="flex items-start gap-3 md:gap-4">
+                                        <div class="flex items-center justify-center w-7 h-7 md:w-8 md:h-8 shrink-0">
+                                            <i class="fa-solid fa-location-dot text-xl md:text-2xl text-gray-400"></i>
+                                        </div>
+                                        <span class="text-gray-400 text-sm md:text-base mt-0.5">
+                {{ $contact_section_address_content }}
+            </span>
                                     </div>
                                 </li>
                             </ul>
