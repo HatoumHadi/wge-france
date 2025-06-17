@@ -28,7 +28,7 @@
                     <div class="bg-white shadow-lg overflow-hidden sm:w-1/2 w-full">
 
                         @php
-                            $images = !empty($product->images) ? json_decode($product->images, true) : [];
+                            $images = is_array($product->images) ? $product->images : [];
                         @endphp
 
                         <div class="swiper_2 mySwiper_2">
