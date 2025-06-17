@@ -14,12 +14,12 @@ class LandingSettingsTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('landing_settings')->delete();
-        
+
         \DB::table('landing_settings')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'key' => 'header_primary_title',
@@ -27,7 +27,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2024-12-08 09:03:29',
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 2,
                 'key' => 'home_section_one_title',
@@ -35,7 +35,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2024-12-08 09:03:29',
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 3,
                 'key' => 'home_section_one_title_one',
@@ -43,7 +43,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 4,
                 'key' => 'home_section_one_description_one',
@@ -51,7 +51,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 6,
                 'key' => 'home_section_one_title_two',
@@ -59,7 +59,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 7,
                 'key' => 'home_section_one_description_two',
@@ -67,7 +67,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 9,
                 'key' => 'home_section_one_title_three',
@@ -75,7 +75,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 10,
                 'key' => 'home_section_one_description_three',
@@ -83,7 +83,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            8 => 
+            8 =>
             array (
                 'id' => 12,
                 'key' => 'home_section_one_title_four',
@@ -91,7 +91,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            9 => 
+            9 =>
             array (
                 'id' => 13,
                 'key' => 'home_section_one_description_four',
@@ -99,7 +99,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:03:29',
                 'updated_at' => '2025-04-27 11:26:48',
             ),
-            10 => 
+            10 =>
             array (
                 'id' => 15,
                 'key' => 'header_images',
@@ -107,7 +107,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-05-18 09:45:19',
             ),
-            11 => 
+            11 =>
             array (
                 'id' => 16,
                 'key' => 'about_primary_title',
@@ -115,7 +115,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            12 => 
+            12 =>
             array (
                 'id' => 17,
                 'key' => 'about_description',
@@ -123,7 +123,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-05-01 11:26:04',
             ),
-            13 => 
+            13 =>
             array (
                 'id' => 18,
                 'key' => 'about_video',
@@ -131,7 +131,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-04-28 20:02:03',
             ),
-            14 => 
+            14 =>
             array (
                 'id' => 19,
                 'key' => 'about_work_shop_images',
@@ -139,7 +139,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-04-27 17:37:57',
             ),
-            15 => 
+            15 =>
             array (
                 'id' => 20,
                 'key' => 'about_work_shop_title',
@@ -147,7 +147,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            16 => 
+            16 =>
             array (
                 'id' => 21,
                 'key' => 'our_vision_section_title',
@@ -155,7 +155,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2024-06-24 15:30:07',
             ),
-            17 => 
+            17 =>
             array (
                 'id' => 22,
                 'key' => 'our_vision_description',
@@ -163,7 +163,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2025-05-01 11:22:11',
             ),
-            18 => 
+            18 =>
             array (
                 'id' => 23,
                 'key' => 'our_vision_primary_image',
@@ -171,7 +171,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2025-05-01 11:09:49',
             ),
-            19 => 
+            19 =>
             array (
                 'id' => 24,
                 'key' => 'our_vision_second_image',
@@ -179,7 +179,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2025-05-01 11:09:49',
             ),
-            20 => 
+            20 =>
             array (
                 'id' => 25,
                 'key' => 'our_vision_third_image',
@@ -187,7 +187,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2025-05-01 11:09:49',
             ),
-            21 => 
+            21 =>
             array (
                 'id' => 26,
                 'key' => 'our_mission_section_title',
@@ -195,7 +195,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2024-06-24 15:30:07',
             ),
-            22 => 
+            22 =>
             array (
                 'id' => 27,
                 'key' => 'our_mission_description',
@@ -203,7 +203,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2025-05-01 11:28:51',
             ),
-            23 => 
+            23 =>
             array (
                 'id' => 28,
                 'key' => 'our_mission_primary_image',
@@ -211,7 +211,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2025-05-01 11:36:59',
             ),
-            24 => 
+            24 =>
             array (
                 'id' => 29,
                 'key' => 'our_mission_second_image',
@@ -219,7 +219,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2025-05-01 11:36:59',
             ),
-            25 => 
+            25 =>
             array (
                 'id' => 30,
                 'key' => 'about_secondary_title',
@@ -227,7 +227,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            26 => 
+            26 =>
             array (
                 'id' => 31,
                 'key' => 'about_header_image',
@@ -235,7 +235,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-04-27 17:37:57',
             ),
-            27 => 
+            27 =>
             array (
                 'id' => 32,
                 'key' => 'our_vision_header_image',
@@ -243,7 +243,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-05-01 10:53:03',
             ),
-            28 => 
+            28 =>
             array (
                 'id' => 33,
                 'key' => 'our_vision_section_second_title',
@@ -251,7 +251,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            29 => 
+            29 =>
             array (
                 'id' => 34,
                 'key' => 'our_mission_header_image',
@@ -259,7 +259,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-05-01 11:36:59',
             ),
-            30 => 
+            30 =>
             array (
                 'id' => 35,
                 'key' => 'our_mission_section_secondary_title',
@@ -267,7 +267,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            31 => 
+            31 =>
             array (
                 'id' => 36,
                 'key' => 'faq_section_title',
@@ -275,7 +275,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            32 => 
+            32 =>
             array (
                 'id' => 37,
                 'key' => 'faq_section_secondary_title',
@@ -283,7 +283,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            33 => 
+            33 =>
             array (
                 'id' => 38,
                 'key' => 'faq_header_image',
@@ -291,7 +291,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-05-18 07:33:32',
             ),
-            34 => 
+            34 =>
             array (
                 'id' => 39,
                 'key' => 'contact_section_title',
@@ -299,7 +299,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            35 => 
+            35 =>
             array (
                 'id' => 40,
                 'key' => 'contact_section_secondary_title',
@@ -307,7 +307,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            36 => 
+            36 =>
             array (
                 'id' => 41,
                 'key' => 'contact_header_image',
@@ -315,7 +315,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-05-18 09:43:17',
             ),
-            37 => 
+            37 =>
             array (
                 'id' => 42,
                 'key' => 'contact_section_address',
@@ -323,7 +323,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            38 => 
+            38 =>
             array (
                 'id' => 43,
                 'key' => 'contact_section_address_content',
@@ -331,7 +331,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            39 => 
+            39 =>
             array (
                 'id' => 44,
                 'key' => 'contact_section_whatsapp',
@@ -339,7 +339,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            40 => 
+            40 =>
             array (
                 'id' => 45,
                 'key' => 'contact_section_whatsapp_content',
@@ -347,7 +347,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            41 => 
+            41 =>
             array (
                 'id' => 46,
                 'key' => 'contact_telephone',
@@ -355,7 +355,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            42 => 
+            42 =>
             array (
                 'id' => 47,
                 'key' => 'contact_telephone_content',
@@ -363,7 +363,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            43 => 
+            43 =>
             array (
                 'id' => 48,
                 'key' => 'contact_email_title',
@@ -371,7 +371,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            44 => 
+            44 =>
             array (
                 'id' => 49,
                 'key' => 'contact_email_content',
@@ -379,7 +379,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-05-01 11:28:51',
             ),
-            45 => 
+            45 =>
             array (
                 'id' => 50,
                 'key' => 'home_content_over_slider_header',
@@ -387,7 +387,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2024-12-08 09:05:31',
             ),
-            46 => 
+            46 =>
             array (
                 'id' => 51,
                 'key' => 'home_content_over_slider_description',
@@ -395,7 +395,7 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-12-08 09:05:31',
                 'updated_at' => '2025-04-27 17:38:23',
             ),
-            47 => 
+            47 =>
             array (
                 'id' => 52,
                 'key' => 'product_header_image',
@@ -403,16 +403,16 @@ class LandingSettingsTableSeeder extends Seeder
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2025-05-18 09:42:35',
             ),
-            48 => 
+            48 =>
             array (
                 'id' => 53,
                 'key' => 'logo',
-                'value' => '{"fr":"/logo/WGE-France.jpg","ar":"/logo/WGE-France.jpg","en":"/logo/WGE-France.jpg"}',
+                'value' => '{"fr":"logo/WGE-France.jpg","ar":"logo/WGE-France.jpg","en":"logo/WGE-France.jpg"}',
                 'created_at' => '2024-06-20 15:31:48',
                 'updated_at' => '2025-04-27 17:37:57',
             ),
         ));
-        
-        
+
+
     }
 }

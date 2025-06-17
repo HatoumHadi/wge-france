@@ -7,7 +7,7 @@
                         <div>
                             <a href="{{ route('home') }}"
                                class="inline-block max-w-[160px] focus:outline-none">
-                                <img src="{{ asset($logo) }}" alt="logo" class="max-w-full"/>
+                                <img src="{{ asset('storage/'.$logo) }}" alt="logo" class="max-w-full"/>
                             </a>
                             <p class="text-gray-400 mt-8">{{__('trans.footer_text')}}</p>
                         </div>

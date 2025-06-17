@@ -2,7 +2,7 @@
     <section id="our_vision">
 
         <div class="relative w-full h-[400px] mt-[73px]">
-            <img src="{{ asset($our_vision_header_image) }}" class="w-full h-full object-cover" alt="points">
+            <img src="{{ asset('storage/'.$our_vision_header_image) }}" class="w-full h-full object-cover" alt="points">
 
             <div class="absolute inset-0 flex items-center justify-center text-center bg-black/50">
                 <div class="text-white">
@@ -47,14 +47,14 @@
                         <div class="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
                             <div
                                 class="mb-4 sm:mb-8 sm:h-[220px] md:h-[346px] lg:mb-4 lg:h-[225px] xl:mb-8 xl:h-[310px]">
-                                <img src="{{ asset($primary_image) }}" alt="about image"
+                                <img src="{{ $primary_image }}" alt="about image"
                                      class="h-full w-full object-cover object-center"/>
                             </div>
 
                             <div
                                 class="z-10 mb-4 flex items-center justify-center overflow-hidden sm:mb-8 sm:h-[160px] lg:mb-4 xl:mb-8">
                                 <div>
-                                    <img src="{{ asset($second_image) }}" alt="about image"
+                                    <img src="{{ $second_image }}" alt="about image"
                                          class="h-full w-full object-cover object-center"/>
 
                                 </div>
@@ -63,7 +63,7 @@
                         </div>
                         <div class="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
                             <div class="mb-4 sm:mb-8 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px]">
-                                <img src="{{ asset($third_image) }}" alt="about image"
+                                <img src="{{ $third_image }}" alt="about image"
                                      class="h-full w-full object-cover object-center"/>
                             </div>
                         </div>

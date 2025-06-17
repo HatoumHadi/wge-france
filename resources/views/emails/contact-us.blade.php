@@ -47,7 +47,7 @@
 <body>
 <div class="email-container">
     <div class="email-header">
-        <img src="{{ asset($logo) }}" alt="wge-france">
+        <img src="{{ asset('storage/'.$logo) }}" alt="wge-france">
         <h2>New Contact Form Submission</h2>
     </div>
     <div class="email-content">

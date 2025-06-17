@@ -1,7 +1,7 @@
 <div>
     <section id="our_mission">
         <div class="relative w-full h-[400px] mt-[73px]">
-            <img src="{{ asset($our_mission_header_image) }}" class="w-full h-full object-cover" alt="points">
+            <img src="{{ asset('storage/'.$our_mission_header_image) }}" class="w-full h-full object-cover" alt="points">
 
             <div class="absolute inset-0 flex items-center justify-center text-center bg-black/50">
                 <div class="text-white">
@@ -43,13 +43,13 @@
                     <div class="-mx-2 flex flex-wrap sm:-mx-4 lg:-mx-2 xl:-mx-4">
                         <div class="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
                             <div class="mb-4 sm:mb-8 sm:h-full lg:mb-4 xl:mb-8">
-                                <img src="{{ asset($primary_image) }}" alt="about image"
+                                <img src="{{ $primary_image }}" alt="about image"
                                      class="h-full w-full object-cover object-center"/>
                             </div>
                         </div>
                         <div class="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
                             <div class="mb-4 sm:mb-0 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px]">
-                                <img src="{{ asset($second_image) }}" alt="about image"
+                                <img src="{{ $second_image }}" alt="about image"
                                      class="h-full w-full object-cover object-center"/>
                             </div>
                         </div>

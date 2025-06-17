@@ -5,7 +5,7 @@
                 <div class="px-4 logo sm:w-[23rem] fixed-logo">
                     <a href="{{ route('home') }}"
                        class="navbar-logo block w-full py-2">
-                        <img src="{{ asset($logo) }}" alt="wge-france"
+                        <img src="{{ asset('storage/'.$logo) }}" alt="wge-france"
                              class="header-logo w-full fixed-image" style="width: 100px; height: auto;"/>
                     </a>
                 </div>
@@ -18,7 +18,7 @@
 
                                     <li class="group relative">
                                         <a href="{{ route('home') }}"
-                                           class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full focus:outline-none
+                                           class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:lg:after:w-full focus:outline-none
                                            {{ Request::is('/') ? 'text-primary lg:after:w-full' : '' }}"
                                            style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                             {{ __('trans.home') }}
@@ -29,7 +29,7 @@
 
                                     <li class="group relative">
                                         <a href="{{ route('about-us') }}"
-                                           class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full focus:outline-none
+                                           class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:lg:after:w-full focus:outline-none
                                         {{ Request::is('about-us') ? 'text-primary lg:after:w-full' : '' }}"
                                            style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                             {{ __('trans.about_us') }}
@@ -40,7 +40,7 @@
 
                                     <li class="group relative">
                                         <a href="{{ route('our-vision') }}"
-                                           class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full focus:outline-none
+                                           class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:lg:after:w-full focus:outline-none
        {{ Request::is('our-vision') ? 'text-primary lg:after:w-full' : '' }}"
                                            style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                             {{ __('trans.our_vision') }}
@@ -53,7 +53,7 @@
 
                                     <li class="group relative">
                                         <a href="{{ route('our-mission') }}"
-                                           class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full focus:outline-none
+                                           class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:lg:after:w-full focus:outline-none
        {{ Request::is('our-mission') ? 'text-primary lg:after:w-full' : '' }}"
                                            style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                             {{ __('trans.our_mission') }}
@@ -65,7 +65,7 @@
 
                                     <li class="group relative">
                                         <a href="{{ route('products') }}"
-                                           class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full focus:outline-none
+                                           class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:lg:after:w-full focus:outline-none
        {{ Request::is('products*') ? 'text-primary lg:after:w-full' : '' }}"
                                            style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                             {{ __('trans.products') }}
@@ -77,7 +77,7 @@
 
                                     <li class="group relative">
                                         <a href="{{ route('faq') }}"
-                                           class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full focus:outline-none
+                                           class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:lg:after:w-full focus:outline-none
        {{ Request::is('faq') ? 'text-primary lg:after:w-full' : '' }}"
                                            style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                             {{ __('trans.faq') }}
@@ -89,7 +89,7 @@
 
                                     <li class="group relative">
                                         <a href="{{ route('contact-us') }}"
-                                           class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:after:w-full focus:outline-none
+                                           class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:lg:after:w-full focus:outline-none
        {{ Request::is('contact-us') ? 'text-primary lg:after:w-full' : '' }}"
                                            style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                             {{ __('trans.contact_us') }}

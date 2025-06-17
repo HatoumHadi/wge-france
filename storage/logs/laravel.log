@@ -26926,3 +26926,7 @@ Stack trace:
 #49 C:\\Program Files\\Herd\\resources\\app.asar.unpacked\\resources\\valet\\server.php(139): require('C:\\\\Users\\\\HP\\\\Des...')
 #50 {main}
 "} 
+[2025-06-16 22:01:56] local.ERROR: Maximum execution time of 30 seconds exceeded {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at C:\\Users\\HP\\Desktop\\Hadi Private\\Private Project\\wge-france\\storage\\framework\\views\\31d3e7c92173f753c07cbc003d3a2418.php:1)
+[stacktrace]
+#0 {main}
+"} 

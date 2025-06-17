@@ -44,7 +44,7 @@
                                     @endforeach
                                 @else
                                     <div class="swiper-slide overflow-hidden flex items-center justify-center bg-gray-100 rounded-xl shadow-md">
-                                        <img src="{{ asset('products/default-product.jpg') }}"
+                                        <img src="{{ asset('storage/products/default-product.jpg') }}"
                                              alt="Default Image"
                                              class="w-full h-full object-fill gallery-image cursor-pointer transition-transform duration-300 hover:scale-105"
                                              loading="lazy">
@@ -69,7 +69,7 @@
                                     @endforeach
                                 @else
                                     <div class="swiper-slide cursor-pointer">
-                                        <img src="{{ asset('products/default-product.jpg') }}" alt="Default Image">
+                                        <img src="{{ asset('storage/products/default-product.jpg') }}" alt="Default Image">
                                     </div>
                                 @endif
                             </div>

@@ -17,7 +17,7 @@
                 @endforeach
             @else
                 <div class="swiper-slide">
-                    <img src="{{ asset('products/default-product.jpg') }}" alt="Default Image"
+                    <img src="{{ asset('storage/products/default-product.jpg') }}" alt="Default Image"
                          class="w-full max-h-[200px] h-[50vh] object-cover">
                 </div>
             @endif
