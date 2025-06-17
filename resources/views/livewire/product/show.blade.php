@@ -56,7 +56,7 @@
                         </div>
 
                         @php
-                            $images = !empty($product->images) ? json_decode($product->images, true) : [];
+                            $images = is_array($product->images) ? $product->images : [];
                         @endphp
 
                         <div thumbsSlider="" class="swiper mySwiper swiper-wrapper-height-gallery m-2">
