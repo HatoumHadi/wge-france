@@ -6,15 +6,15 @@
                     <i class="fa-solid fa-house text-primary"></i>
                 </div>
                 <div wire:click="redirectToHome" class="cursor-pointer">
-                    <p class="ml-2 text-gray-500 text-xs sm:text-base">{{ __('trans.home') }}</p>
+                    <p class="mx-2 text-gray-500 text-xs sm:text-base">{{ __('trans.home') }}</p>
                 </div>
-                <i class="fa-solid fa-arrow-right text-primary ml-2"></i>
+                <i class="fa-solid {{app()->getLocale() === 'ar' ? 'fa-arrow-left' : 'fa-arrow-right'}} text-primary ml-2"></i>
                 <div wire:click="redirectToProducts" class="cursor-pointer">
                     <p class="ml-2 text-gray-500 text-xs sm:text-base">Products</p>
                 </div>
-                <i class="fa-solid fa-arrow-right text-primary ml-2"></i>
+                <i class="fa-solid {{app()->getLocale() === 'ar' ? 'fa-arrow-left' : 'fa-arrow-right'}} text-primary ml-2"></i>
                 <p class="ml-2 text-gray-500 text-xs sm:text-base">{{$product->category->name}}</p>
-                <i class="fa-solid fa-arrow-right text-primary ml-2"></i>
+                <i class="fa-solid {{app()->getLocale() === 'ar' ? 'fa-arrow-left' : 'fa-arrow-right'}} text-primary ml-2"></i>
                 <p class="ml-2 text-xs sm:text-base">{{$product->name}}</p>
             </div>
         </div>
