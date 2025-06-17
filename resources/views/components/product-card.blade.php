@@ -5,7 +5,7 @@
     <div class="swiper_2 mySwiper_2">
         <div class="swiper-wrapper">
             @php
-                $images = !empty($product->images) ? json_decode($product->images, true) : [];
+                $images = is_array($product->images) ? $product->images : [];
             @endphp
 
             @if(is_array($images) && count($images) > 0)
