@@ -29,7 +29,7 @@ class AdminPanelProvider extends PanelProvider
             ->default()
             ->id('admin')
             ->path('admin')
-            ->brandLogo(LandingSetting::where('key', 'logo')->first()->value)
+            ->brandLogo(asset('storage/'.LandingSetting::where('key', 'logo')->first()->value))
             ->brandLogoHeight('45px')
             ->login()
             ->colors([
