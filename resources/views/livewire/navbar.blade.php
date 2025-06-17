@@ -113,7 +113,7 @@
                     </button>
                     <div x-data="{ open: false, isDesktop: window.innerWidth > 768 }"
                          x-init="window.addEventListener('resize', () => isDesktop = window.innerWidth > 768)"
-                         class="sm:relative sm:mx-0 mr-12 sm:mr-0 sm:ml-0"
+                         class="sm:relative sm:mx-0 {{ app()->getLocale() == 'ar' ? 'ml-12 sm:ml-0 sm:mr-0' : 'mr-12 sm:mr-0 sm:ml-0' }}"
                          :class="{ 'hover-trigger': isDesktop }">
 
                         <button class="focus:outline-none" @click="open = !open">
