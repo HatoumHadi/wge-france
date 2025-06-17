@@ -7,7 +7,9 @@ use App\Filament\Resources\ProductResource\RelationManagers;
 use App\Models\Product;
 use App\Models\Setting;
 use Filament\Forms;
+use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Form;
+use Filament\Forms\Get;
 use Filament\Forms\Set;
 use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Resource;
@@ -45,6 +47,7 @@ class ProductResource extends Resource
                 Forms\Components\TextInput::make('slug')
                     ->label(__('trans.slug'))
                     ->disabled()
+                    ->dehydrated()
                     ->maxLength(255),
 
                 Forms\Components\TextInput::make('model')
@@ -108,9 +111,10 @@ class ProductResource extends Resource
                     ->label(__('trans.product_warranty'))
                     ->numeric(),
 
-                Forms\Components\TextInput::make('manufacture_year')
-                    ->label(__('trans.product_manufacture_year'))
-                    ->numeric(),
+                Forms\Components\Select::make('manufacture_year')
+                    ->options(array_combine(range(now()->year, 1900), range(now()->year, 1900)))
+                    ->hidden(fn(Get $get): bool => $get('manufacture_year') === false)
+                    ->label(__('trans.product_manufacture_year')),
 
                 Forms\Components\FileUpload::make('images')
                     ->multiple()
