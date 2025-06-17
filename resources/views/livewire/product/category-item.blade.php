@@ -1,8 +1,10 @@
-<div class="pl-4 border-l border-gray-300 space-y-1">
+<div class="pl-4 border-l border-gray-300 space-y-1"
+     :class="{ 'pr-4 border-r border-l-0': '{{ app()->getLocale() }}' === 'ar' }">
 
     <div x-data
          x-init="$refs.checkbox.indeterminate = {{ $this->isIndeterminate($category) ? 'true' : 'false' }}"
-         class="flex items-center space-x-3 mt-1">
+         class="flex items-center space-x-3 mt-1"
+         :class="{ 'space-x-reverse': '{{ app()->getLocale() }}' === 'ar' }">
 
         <div class="w-4 h-4 flex items-center justify-center">
             @if($category->children->count())
@@ -31,10 +33,8 @@
         </label>
     </div>
 
-
-
-@if($open)
-        <div class="ml-4 mt-1 space-y-1">
+    @if($open)
+        <div class="ml-4 mt-1 space-y-1" :class="{ 'mr-4 ml-0': '{{ app()->getLocale() }}' === 'ar' }">
             @foreach($category->children as $child)
                 @livewire('product.category-item', [
                     'category' => $child,
