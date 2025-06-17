@@ -1,7 +1,7 @@
 <div>
     <div class="ud-header fixed left-0 top-0 z-40 flex w-full items-center bg-white shadow">
         <div class="container">
-            <div class="relative  navbar flex items-center justify-center">
+            <div class="relative navbar flex items-center justify-center">
                 <div class="px-4 logo sm:w-[23rem] fixed-logo">
                     <a href="{{ route('home') }}"
                        class="navbar-logo block w-full py-2">
@@ -12,7 +12,7 @@
                 <div class="flex w-full items-center justify-center px-4">
                     <div>
                         <nav id="navbarCollapse"
-                             class="absolute right-4 top-[60px] hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6">
+                             class="absolute right-4 top-[60px] hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6 {{ app()->getLocale() == 'ar' ? 'right-auto left-4' : '' }}">
                             <div>
                                 <ul class="block sm:flex">
 
@@ -24,8 +24,6 @@
                                             {{ __('trans.home') }}
                                         </a>
                                     </li>
-
-
 
                                     <li class="group relative">
                                         <a href="{{ route('about-us') }}"
@@ -47,10 +45,6 @@
                                         </a>
                                     </li>
 
-
-
-
-
                                     <li class="group relative">
                                         <a href="{{ route('our-mission') }}"
                                            class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:lg:after:w-full focus:outline-none
@@ -59,9 +53,6 @@
                                             {{ __('trans.our_mission') }}
                                         </a>
                                     </li>
-
-
-
 
                                     <li class="group relative">
                                         <a href="{{ route('products') }}"
@@ -72,9 +63,6 @@
                                         </a>
                                     </li>
 
-
-
-
                                     <li class="group relative">
                                         <a href="{{ route('faq') }}"
                                            class="ud-menu-scroll mx-10 flex py-2 text-base font-bold text-black lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[4px] after:w-0 after:bg-primary after:transition-all after:duration-300 after:ease-in-out hover:lg:after:w-full focus:outline-none
@@ -83,9 +71,6 @@
                                             {{ __('trans.faq') }}
                                         </a>
                                     </li>
-
-
-
 
                                     <li class="group relative">
                                         <a href="{{ route('contact-us') }}"
@@ -96,8 +81,6 @@
                                         </a>
                                     </li>
 
-
-
                                 </ul>
                             </div>
                         </nav>
@@ -106,17 +89,18 @@
 
                 <div class="flex items-center justify-end lg:pr-0">
                     <button id="navbarToggler"
-                            class="absolute top-1/2 block -translate-y-1/2 rounded-lg py-[6px] lg:hidden">
-                    <span class="relative my-[6px] block h-[2px] w-[30px] bg-black"></span>
+                            class="absolute top-1/2 block -translate-y-1/2 rounded-lg py-[6px] lg:hidden"
+                            @click="document.getElementById('navbarCollapse').classList.toggle('hidden'); openLang = false">
+                        <span class="relative my-[6px] block h-[2px] w-[30px] bg-black"></span>
                         <span class="relative my-[6px] block h-[2px] w-[30px] bg-black"></span>
                         <span class="relative my-[6px] block h-[2px] w-[30px] bg-black"></span>
                     </button>
-                    <div x-data="{ open: false, isDesktop: window.innerWidth > 768 }"
+                    <div x-data="{ openLang: false, isDesktop: window.innerWidth > 768 }"
                          x-init="window.addEventListener('resize', () => isDesktop = window.innerWidth > 768)"
                          class="sm:relative sm:mx-0 {{ app()->getLocale() == 'ar' ? 'ml-12 sm:ml-0 sm:mr-0' : 'mr-12 sm:mr-0 sm:ml-0' }}"
                          :class="{ 'hover-trigger': isDesktop }">
 
-                        <button class="focus:outline-none" @click="open = !open">
+                        <button class="focus:outline-none" @click="openLang = !openLang; document.getElementById('navbarCollapse').classList.add('hidden')">
                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
                                  viewBox="0 0 1280.000000 1280.000000" preserveAspectRatio="xMidYMid meet"
                                  style="margin-top:5px;">
@@ -177,8 +161,8 @@
                             </svg>
                         </button>
 
-                        <div x-show="open" x-cloak @click.away="open = false"
-                             class="absolute w-28 bg-white border rounded shadow-lg right-4 sm:right-0 top-[60px] sm:-left-10">
+                        <div x-show="openLang" x-cloak @click.away="openLang = false"
+                             class="absolute w-28 bg-white border rounded shadow-lg {{ app()->getLocale() == 'ar' ? 'left-4 sm:left-0' : 'right-4 sm:right-0' }} top-[60px] sm:-left-10">
                             <div class="py-1">
                                 <button wire:click="switchLanguage('en')"
                                         class="block px-4 py-2 text-sm text-black hover:text-primary w-full">
@@ -197,25 +181,28 @@
                             </div>
                         </div>
                     </div>
-
-                    <script>
-                        document.addEventListener('DOMContentLoaded', () => {
-                            if (window.innerWidth > 768) {
-                                const hoverElement = document.querySelector('.hover-trigger');
-                                if (hoverElement) {
-                                    hoverElement.addEventListener('mouseenter', () => {
-                                        Alpine.store('open', true);
-                                    });
-                                    hoverElement.addEventListener('mouseleave', () => {
-                                        Alpine.store('open', false);
-                                    });
-                                }
-                            }
-                        });
-                    </script>
-
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbarToggler = document.getElementById('navbarToggler');
+        const navbarCollapse = document.getElementById('navbarCollapse');
+
+        navbarToggler.addEventListener('click', function() {
+            navbarCollapse.classList.toggle('hidden');
+            navbarCollapse.classList.toggle('block');
+        });
+
+        // Close navbar when clicking outside (for mobile)
+        document.addEventListener('click', function(event) {
+            if (!navbarToggler.contains(event.target) && !navbarCollapse.contains(event.target)) {
+                navbarCollapse.classList.add('hidden');
+                navbarCollapse.classList.remove('block');
+            }
+        });
+    });
+</script>
