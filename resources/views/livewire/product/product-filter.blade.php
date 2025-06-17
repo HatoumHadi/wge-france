@@ -1,5 +1,5 @@
 <div class="block sm:hidden">
-    <h2 class="text-lg sm:text-2xl font-bold font-size-header bg-primary text-white px-4 py-6">
+    <h2 class="text-lg sm:text-2xl font-bold font-size-header bg-primary text-white px-4 py-6 {{ app()->getLocale() === 'ar' ? 'text-right' : 'text-left' }}">
         {{ __('trans.product_category') }}
     </h2>
 
@@ -11,8 +11,8 @@
                 @endphp
 
                 <div x-data="{ isOpen: false }" class="group p-1 mb-3 shadow-sm rounded">
-                    <div class="flex justify-between items-center cursor-pointer p-2 rounded">
-                        <div class="flex items-center space-x-2 flex-grow"
+                    <div class="flex justify-between items-center cursor-pointer p-2 rounded {{ app()->getLocale() === 'ar' ? 'flex-row-reverse' : '' }}">
+                        <div class="flex items-center {{ app()->getLocale() === 'ar' ? 'space-x-reverse space-x-2' : 'space-x-2' }} flex-grow"
                              @click="$wire.toggleCheck('{{ $category->id }}')">
                             @if($hasChildren)
                                 <button
@@ -49,15 +49,15 @@
                         <div x-show="isOpen"
                              x-transition:enter="transition-all duration-300 ease-in-out"
                              x-transition:leave="transition-all duration-300 ease-in-out"
-                             class="ml-6 mt-1 space-y-1 border-l border-gray-300 pl-3">
+                             class="{{ app()->getLocale() === 'ar' ? 'mr-6 pr-3 border-r' : 'ml-6 pl-3 border-l' }} mt-1 space-y-1 border-gray-300">
                             @foreach($categories->where('parent_id', $category->id) as $child)
                                 @php
                                     $hasGrandChildren = $categories->where('parent_id', $child->id)->isNotEmpty();
                                 @endphp
 
                                 <div x-data="{ isChildOpen: false }" class="group">
-                                    <div class="flex justify-between items-center p-1 rounded">
-                                        <div class="flex items-center space-x-2 flex-grow"
+                                    <div class="flex justify-between items-center p-1 rounded {{ app()->getLocale() === 'ar' ? 'flex-row-reverse' : '' }}">
+                                        <div class="flex items-center {{ app()->getLocale() === 'ar' ? 'space-x-reverse space-x-2' : 'space-x-2' }} flex-grow"
                                              @click="$wire.toggleCheck('{{ $child->id }}')">
                                             <input
                                                 type="checkbox"
@@ -82,7 +82,7 @@
                                         @if($hasGrandChildren)
                                             <button
                                                 @click.stop="isChildOpen = !isChildOpen"
-                                                class="transition-transform duration-300 text-gray-600 hover:text-primary ml-2 cursor-pointer"
+                                                class="transition-transform duration-300 text-gray-600 hover:text-primary {{ app()->getLocale() === 'ar' ? 'mr-2' : 'ml-2' }} cursor-pointer"
                                                 :class="{ 'rotate-180': isChildOpen }"
                                             >
                                                 ▼
@@ -94,9 +94,9 @@
                                         <div x-show="isChildOpen"
                                              x-transition:enter="transition-all duration-300 ease-in-out"
                                              x-transition:leave="transition-all duration-300 ease-in-out"
-                                             class="ml-6 mt-1 space-y-1 border-l border-gray-300 pl-3">
+                                             class="{{ app()->getLocale() === 'ar' ? 'mr-6 pr-3 border-r' : 'ml-6 pl-3 border-l' }} mt-1 space-y-1 border-gray-300">
                                             @foreach($categories->where('parent_id', $child->id) as $grandChild)
-                                                <div class="flex items-center space-x-2 pl-2 p-1 rounded"
+                                                <div class="flex items-center {{ app()->getLocale() === 'ar' ? 'space-x-reverse space-x-2' : 'space-x-2' }} {{ app()->getLocale() === 'ar' ? 'pr-2' : 'pl-2' }} p-1 rounded"
                                                      @click="$wire.toggleCheck('{{ $grandChild->id }}')">
                                                     <input
                                                         type="checkbox"

@@ -37,18 +37,22 @@
                 <div x-show="openFilter"
                      x-cloak
                      x-transition:enter="transition ease-in-out duration-300 transform"
-                     x-transition:enter-start="opacity-0 -translate-x-full"
+                     x-transition:enter-start="opacity-0 {{ app()->getLocale() === 'ar' ? 'translate-x-full' : '-translate-x-full' }}"
                      x-transition:enter-end="opacity-100 translate-x-0"
                      x-transition:leave="transition ease-in-out duration-300 transform"
                      x-transition:leave-start="opacity-100 translate-x-0"
-                     x-transition:leave-end="opacity-0 -translate-x-full"
+                     x-transition:leave-end="opacity-0 {{ app()->getLocale() === 'ar' ? 'translate-x-full' : '-translate-x-full' }}"
                      @click.away="openFilter = false"
                      @close-filter.window="openFilter = false"
-                     class="fixed top-0 left-0 w-64 h-screen bg-white shadow-lg overflow-y-auto z-50">
+                     class="fixed top-0 {{ app()->getLocale() === 'ar' ? 'right-0' : 'left-0' }} w-64 h-screen bg-white shadow-lg overflow-y-auto z-50">
                     <div @click="$dispatch('close-filter')"
-                         class="w-full p-4 bg-gray-900 text-white font-bold text-base text-left">
-                        <i class="fa-solid fa-angle-left"></i>
-                        <span class="ml-2">{{__('trans.back')}}</span>
+                         class="w-full p-4 bg-gray-900 text-white font-bold text-base {{ app()->getLocale() === 'ar' ? 'text-right' : 'text-left' }}">
+                        @if(app()->getLocale() === 'ar')
+                            <i class="fa-solid fa-angle-right ml-2"></i>
+                        @else
+                            <i class="fa-solid fa-angle-left"></i>
+                        @endif
+                        <span class="{{ app()->getLocale() === 'ar' ? 'mr-2' : 'ml-2' }}">{{__('trans.back')}}</span>
                     </div>
                     <livewire:product.product-filter :categories="$categories"/>
                 </div>
